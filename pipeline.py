@@ -444,7 +444,6 @@ def main():
                 "CAGR_pct": round(cagr_pct,2),
                 "MaxDD_pct": round(dd_pct,2),
             })
-        import pandas as pd
         pd.DataFrame(rows_c).to_csv("portfolio_compare.csv", index=False)
 
     print("Done v3.5.1.")

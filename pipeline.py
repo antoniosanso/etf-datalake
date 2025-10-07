@@ -6,7 +6,7 @@ DATA_DIR = "data"
 START_YEARS = 10
 CAPITAL0 = 10000.0
 
-# ---- Report headers (edit here only) ----
+# ---- Report headers (order + titles) ----
 REPORT_COLUMNS_ORDER = [
     "ticker","best_strategy",
     "profit_est_eur","profit_est_pct",
@@ -16,6 +16,8 @@ REPORT_COLUMNS_ORDER = [
     "n_trades","median_hold_days",
     "total_invested_days","invested_time_pct",
     "buy_hold_pct_ref",
+    "tnow_bh_cond_pct","tnow_bh_cond_cagr","tnow_bh_cond_maxdd","tnow_bh_cond_invested_pct",
+    "tnow_bh_pure_pct","tnow_bh_pure_cagr","tnow_bh_pure_maxdd","tnow_bh_pure_invested_pct",
     "horizon_hint","status"
 ]
 REPORT_COLUMNS_MAP = {
@@ -32,6 +34,14 @@ REPORT_COLUMNS_MAP = {
     "total_invested_days": "Tempo investito totale (gg)",
     "invested_time_pct": "% tempo investito",
     "buy_hold_pct_ref": "Buy&Hold % (ref)",
+    "tnow_bh_cond_pct": "TNOW BH-cond %",
+    "tnow_bh_cond_cagr": "TNOW BH-cond CAGR %",
+    "tnow_bh_cond_maxdd": "TNOW BH-cond MaxDD %",
+    "tnow_bh_cond_invested_pct": "TNOW BH-cond % tempo investito",
+    "tnow_bh_pure_pct": "TNOW BH %",
+    "tnow_bh_pure_cagr": "TNOW BH CAGR %",
+    "tnow_bh_pure_maxdd": "TNOW BH MaxDD %",
+    "tnow_bh_pure_invested_pct": "TNOW BH % tempo investito",
     "horizon_hint": "Orizzonte (mediana giorni / n° trade)",
     "status": "Stato",
 }
@@ -52,32 +62,21 @@ def start_date(years=START_YEARS):
         return today - dt.timedelta(days=365*years)
 
 def normalize_ohlcv_columns(df, ticker_hint=None):
-    # Unnest MultiIndex if present
     if isinstance(df.columns, pd.MultiIndex):
         if ticker_hint is not None and ticker_hint in df.columns.get_level_values(0):
             df = df[ticker_hint]
         else:
             df.columns = [c[1] if isinstance(c, tuple) else c for c in df.columns]
-    # Reset index to expose Date column
     df = df.reset_index()
-    # lowercase
     df.columns = [str(c).lower() for c in df.columns]
-    # normalize date col
-    if "date" in df.columns:
-        df = df.rename(columns={"date":"dt"})
-    elif "datetime" in df.columns:
-        df = df.rename(columns={"datetime":"dt"})
-    elif "index" in df.columns:
-        df = df.rename(columns={"index":"dt"})
-    # normalize adj close
-    if "adj close" in df.columns:
-        df = df.rename(columns={"adj close":"adj_close"})
-    # guards
+    if "date" in df.columns: df = df.rename(columns={"date":"dt"})
+    elif "datetime" in df.columns: df = df.rename(columns={"datetime":"dt"})
+    elif "index" in df.columns: df = df.rename(columns={"index":"dt"})
+    if "adj close" in df.columns: df = df.rename(columns={"adj close":"adj_close"})
     for col in ["open","high","low","close"]:
         if col not in df.columns:
             raise KeyError(f"missing column '{col}' after normalization")
-    if "volume" not in df.columns:
-        df["volume"] = 0.0
+    if "volume" not in df.columns: df["volume"] = 0.0
     if "dt" not in df.columns:
         df["dt"] = pd.date_range(start="2000-01-01", periods=len(df), freq="D")
     return df
@@ -99,6 +98,16 @@ def dl_ohlcv(ticker: str, start_date):
     df.to_csv(out, index=False)
     print(f"[{ticker}] saved -> {out} ({len(df)} rows)")
     return df
+
+def series_metrics(equity: pd.Series):
+    if equity.empty:
+        return {"total_pct":0.0,"cagr_pct":0.0,"maxdd_pct":0.0}
+    peak = equity.cummax()
+    dd = (equity/peak - 1.0).min()
+    total = equity.iloc[-1]/equity.iloc[0] - 1.0
+    years = (equity.index[-1]-equity.index[0]).days/365.25 if hasattr(equity.index,"dtype") and "datetime64" in str(equity.index.dtype) else len(equity)/252
+    cagr = (equity.iloc[-1]/equity.iloc[0])**(1/years)-1 if years>0 and equity.iloc[0]>0 else 0.0
+    return {"total_pct":float(total*100.0), "cagr_pct":float(cagr*100.0), "maxdd_pct":float(abs(dd*100.0))}
 
 def atr14(df: pd.DataFrame) -> np.ndarray:
     h,l,c = df["high"].values, df["low"].values, df["close"].values
@@ -233,6 +242,27 @@ def buy_hold_pct(df: pd.DataFrame) -> float:
     end_price = float(df["close"].iloc[-1])
     return (end_price / start_price - 1.0) * 100.0
 
+def buy_hold_equity(df: pd.DataFrame) -> pd.Series:
+    d = df.copy()
+    d.index = pd.to_datetime(d["dt"])
+    eq = (1.0 * (1.0 + d["close"].pct_change().fillna(0.0))).cumprod()
+    return eq
+
+def buy_hold_conditional_ma(df: pd.DataFrame, ma: int = 200):
+    d = df.copy()
+    d.index = pd.to_datetime(d["dt"])
+    ma_series = d["close"].rolling(ma).mean()
+    in_market = d["close"] > ma_series
+    equity = [1.0]
+    for i in range(1, len(d)):
+        r = d["close"].iloc[i] / d["close"].iloc[i-1] - 1.0
+        equity.append(equity[-1] * (1.0 + (r if in_market.iloc[i-1] else 0.0)))
+    equity = pd.Series(equity, index=d.index)
+    metrics = series_metrics(equity)
+    invested_pct = float(in_market.mean()*100.0)
+    invested_days = int(in_market.sum())
+    return equity, metrics, invested_pct, invested_days
+
 def build_monthly_close(dfs: dict) -> pd.DataFrame:
     outs = []
     for t, df in dfs.items():
@@ -268,27 +298,62 @@ def max_drawdown(series: pd.Series) -> float:
     dd = (series/peak - 1.0).min()
     return float(dd)
 
+def align_monthly(series: pd.Series) -> pd.Series:
+    return series.asfreq("M").ffill()
+
+def combine_portfolios_monthly(eq_a: pd.Series, eq_b: pd.Series, w_a: float, w_b: float) -> pd.Series:
+    a = align_monthly(eq_a)
+    b = align_monthly(eq_b)
+    idx = a.index.intersection(b.index)
+    a = a.loc[idx]; b = b.loc[idx]
+    r_a = a.pct_change().fillna(0.0)
+    r_b = b.pct_change().fillna(0.0)
+    eq = (1.0 * (1.0 + w_a*r_a + w_b*r_b)).cumprod()
+    eq.index = idx
+    return eq
+
 def main():
     tickers = read_tickers()
     start = start_date()
     dfs = {}
     rows = []
 
+    eq_tnow_bh_cond = None
+    eq_tnow_bh_pure = None
+
     for t in tickers:
         df = dl_ohlcv(t, start)
         if df is None or df.empty:
-            rows.append({"ticker": t, "status": "NO DATA"})
-            continue
-
+            rows.append({"ticker": t, "status": "NO DATA"}); continue
         dfs[t] = df
 
         variants = ["Aggressiva","Intermedia v2","Conservativa v2"]
         perf = {v: backtest_variant_with_metrics(df, v) for v in variants}
         best = max(perf, key=lambda k: perf[k]["pnl_eur"])
 
-        # derived fields
         return_to_maxdd = (perf[best]["pnl_pct"]/perf[best]["maxdd_pct"]) if perf[best]["maxdd_pct"] > 0 else None
-        bh = buy_hold_pct(df)
+        bh_ref = buy_hold_pct(df)
+
+        tnow_fields = {"tnow_bh_cond_pct": None, "tnow_bh_cond_cagr": None, "tnow_bh_cond_maxdd": None, "tnow_bh_cond_invested_pct": None,
+                       "tnow_bh_pure_pct": None, "tnow_bh_pure_cagr": None, "tnow_bh_pure_maxdd": None, "tnow_bh_pure_invested_pct": None}
+        if t == "TNOW.MI":
+            eq_cond, met_cond, inv_pct, inv_days = buy_hold_conditional_ma(df, ma=200)
+            eq_pure = buy_hold_equity(df)
+            met_pure = series_metrics(eq_pure)
+            eq_cond.to_csv("tnow_bh_cond_equity.csv")
+            eq_pure.to_csv("tnow_bh_pure_equity.csv")
+            eq_tnow_bh_cond = eq_cond
+            eq_tnow_bh_pure = eq_pure
+            tnow_fields.update({
+                "tnow_bh_cond_pct": round(met_cond["total_pct"],2),
+                "tnow_bh_cond_cagr": round(met_cond["cagr_pct"],2),
+                "tnow_bh_cond_maxdd": round(met_cond["maxdd_pct"],2),
+                "tnow_bh_cond_invested_pct": round(inv_pct,2),
+                "tnow_bh_pure_pct": round(met_pure["total_pct"],2),
+                "tnow_bh_pure_cagr": round(met_pure["cagr_pct"],2),
+                "tnow_bh_pure_maxdd": round(met_pure["maxdd_pct"],2),
+                "tnow_bh_pure_invested_pct": 100.0,
+            })
 
         rows.append({
             "ticker": t,
@@ -303,33 +368,30 @@ def main():
             "median_hold_days": perf[best]["median_hold_days"],
             "total_invested_days": perf[best]["total_invested_days"],
             "invested_time_pct": perf[best]["invested_time_pct"],
-            "buy_hold_pct_ref": round(bh,2),
+            "buy_hold_pct_ref": round(bh_ref,2),
+            **tnow_fields,
             "horizon_hint": f"mediana hold {perf[best]['median_hold_days']}g; {perf[best]['n_trades']} trade",
             "status": "OK"
         })
 
     rep = pd.DataFrame(rows)
-    # apply order/map
     available = [c for c in REPORT_COLUMNS_ORDER if c in rep.columns]
-    if available:
-        rep = rep[available]
+    if available: rep = rep[available]
     rep = rep.rename(columns=REPORT_COLUMNS_MAP)
-
     rep.to_csv("report.csv", index=False, encoding="utf-8")
     try:
         md = rep.to_markdown(index=False)
     except Exception:
         md = rep.to_csv(index=False)
     with open("report.md","w",encoding="utf-8") as f:
-        f.write("# ETF – Report (v3.4)\n\n")
-        f.write(md)
+        f.write("# ETF – Report (v3.5.1)\n\n"); f.write(md)
 
-    # Momentum rotation: optional (kept)
+    eq_rot = None
     if len(dfs) >= 2:
         monthly = build_monthly_close(dfs)
-        eq = momentum_rotation_monthly(monthly, k=2, lookback_months=12)
-        if not eq.empty:
-            series = eq * CAPITAL0
+        eq_rot = momentum_rotation_monthly(monthly, k=2, lookback_months=12)
+        if not eq_rot.empty:
+            series = eq_rot * CAPITAL0
             total_ret = series.iloc[-1]/series.iloc[0] - 1.0
             cagr_pct = cagr(series) * 100.0
             dd_pct = max_drawdown(series) * 100.0
@@ -343,7 +405,51 @@ def main():
             })
             pr.to_csv("portfolio_report.csv", index=False)
 
-    print("Done v3.4.")
+    combos = []
+    if eq_rot is not None and not eq_rot.empty:
+        eq_r_m = (eq_rot * CAPITAL0)
+        combos.append(("Rotation_100", eq_r_m))
+        if os.path.exists("tnow_bh_cond_equity.csv"):
+            import pandas as pd
+            eq_c = pd.read_csv("tnow_bh_cond_equity.csv", parse_dates=[0], index_col=0).iloc[:,0]
+            eq_c_m = eq_c.asfreq("B").ffill().resample("M").last()
+            combos.append(("TNOW_BHcond_100", eq_c_m))
+            def combine(eqA, eqB, wA, wB):
+                a = eqA.asfreq("B").ffill().resample("M").last()
+                b = eqB.asfreq("B").ffill().resample("M").last()
+                idx = a.index.intersection(b.index)
+                a = a.loc[idx]; b = b.loc[idx]
+                rA = a.pct_change().fillna(0.0); rB = b.pct_change().fillna(0.0)
+                eq = (1.0 * (1.0 + wA*rA + wB*rB)).cumprod()
+                eq.index = idx
+                return eq
+            combos.append(("TNOW_BHcond_80_Rotation_20", combine(eq_c_m, eq_r_m, 0.8, 0.2)))
+            combos.append(("TNOW_BHcond_60_Rotation_40", combine(eq_c_m, eq_r_m, 0.6, 0.4)))
+        if os.path.exists("tnow_bh_pure_equity.csv"):
+            import pandas as pd
+            eq_p = pd.read_csv("tnow_bh_pure_equity.csv", parse_dates=[0], index_col=0).iloc[:,0]
+            eq_p_m = eq_p.asfreq("B").ffill().resample("M").last()
+            combos.append(("TNOW_BH_100", eq_p_m))
+
+    if combos:
+        rows_c = []
+        for name, eq in combos:
+            eq_norm = eq / eq.iloc[0]
+            total = eq_norm.iloc[-1] - 1.0
+            cagr_pct = cagr(eq_norm) * 100.0
+            dd_pct = max_drawdown(eq_norm) * 100.0
+            rows_c.append({
+                "strategy": name,
+                "start": str(eq_norm.index[0].date()),
+                "end": str(eq_norm.index[-1].date()),
+                "total_return_pct": round(total*100.0,2),
+                "CAGR_pct": round(cagr_pct,2),
+                "MaxDD_pct": round(dd_pct,2),
+            })
+        import pandas as pd
+        pd.DataFrame(rows_c).to_csv("portfolio_compare.csv", index=False)
+
+    print("Done v3.5.1.")
 
 if __name__ == "__main__":
     main()

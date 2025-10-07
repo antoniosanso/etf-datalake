@@ -1,13 +1,9 @@
-# ETF DataLake & Report – v3.4
+# ETF DataLake & Report – v3.5.1
 
-Novità principali:
-- **Tempo investito totale (giorni)** e **% tempo investito** nel periodo del backtest.
-- **Rend/MaxDD (x)**, **N° Trade**, **Hold mediano (gg)** come colonne dedicate.
-- Pubblicazione automatica su **GitHub Pages** via Actions (URL fisso).
-
-**Istruzioni una tantum per Pages**
-1. Vai su *Settings → Pages* e imposta **Build and deployment = GitHub Actions**.
-2. Esegui l'Action **Fetch ETF Data & Build Report (v3.4)**; al termine parte **Publish Reports to GitHub Pages**.
-3. I file saranno raggiungibili da `https://<tuo-username>.github.io/<repo>/report.csv` (idem per `report.md`).
+Aggiunte principali rispetto a v3.5:
+- **Benchmark TNOW Buy&Hold “puro”** (oltre al BH condizionato su MA200).
+- Nel report per-ETF aggiunte le metriche TNOW_BH (totale, CAGR, MaxDD, % tempo investito=100).
+- In **portfolio_compare.csv** ora compaiono anche: **TNOW_BH_100** oltre a Rotation e TNOW_BHcond (100%, 80/20, 60/40).
+- Mantiene pubblicazione via **GitHub Pages** (Action o Branch).
 
 Ultimo aggiornamento: 2025-10-07.

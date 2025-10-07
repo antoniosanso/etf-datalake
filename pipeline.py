@@ -410,7 +410,6 @@ def main():
         eq_r_m = (eq_rot * CAPITAL0)
         combos.append(("Rotation_100", eq_r_m))
         if os.path.exists("tnow_bh_cond_equity.csv"):
-            import pandas as pd
             eq_c = pd.read_csv("tnow_bh_cond_equity.csv", parse_dates=[0], index_col=0).iloc[:,0]
             eq_c_m = eq_c.asfreq("B").ffill().resample("M").last()
             combos.append(("TNOW_BHcond_100", eq_c_m))
@@ -426,7 +425,6 @@ def main():
             combos.append(("TNOW_BHcond_80_Rotation_20", combine(eq_c_m, eq_r_m, 0.8, 0.2)))
             combos.append(("TNOW_BHcond_60_Rotation_40", combine(eq_c_m, eq_r_m, 0.6, 0.4)))
         if os.path.exists("tnow_bh_pure_equity.csv"):
-            import pandas as pd
             eq_p = pd.read_csv("tnow_bh_pure_equity.csv", parse_dates=[0], index_col=0).iloc[:,0]
             eq_p_m = eq_p.asfreq("B").ffill().resample("M").last()
             combos.append(("TNOW_BH_100", eq_p_m))

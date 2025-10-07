@@ -1,8 +1,8 @@
-Ticker,Strategia,Profitto €,Profitto %,Rischio € (MaxDD),Rischio % (MaxDD),Rend/MaxDD (x),CAGR %,N° Trade,Hold mediano (gg),Tempo investito totale (gg),% tempo investito,Buy&Hold % (ref),Orizzonte (mediana giorni / n° trade),Stato
-SEME.MI,Intermedia v2,-127.71,-1.28,370.55,3.71,-0.35,-0.34,2,10,20,2.06,70.48,mediana hold 10g; 2 trade,OK
-XAIX.MI,Intermedia v2,1797.95,17.98,326.92,3.27,5.5,3.84,10,13,123,11.0,108.04,mediana hold 13g; 10 trade,OK
-TNOW.MI,Aggressiva,9678.02,96.78,2135.36,21.35,4.53,7.0,3,44,1446,56.88,600.97,mediana hold 44g; 3 trade,OK
-SMH.MI,Intermedia v2,422.86,4.23,1433.82,14.34,0.29,0.86,17,3,116,9.47,202.16,mediana hold 3g; 17 trade,OK
-RBOT.MI,Intermedia v2,-201.93,-2.02,1447.25,14.47,-0.14,-0.23,21,6,192,8.47,219.01,mediana hold 6g; 21 trade,OK
-STKX.MI,Intermedia v2,0.0,0.0,0.0,0.0,,0.0,0,0,0,0.0,179.11,mediana hold 0g; 0 trade,OK
-EDEF.MI,Aggressiva,0.0,0.0,0.0,0.0,,0.0,0,0,0,0.0,9.51,mediana hold 0g; 0 trade,OK
+Ticker,Strategia,Profitto €,Profitto %,Rischio € (MaxDD),Rischio % (MaxDD),Rend/MaxDD (x),CAGR %,N° Trade,Hold mediano (gg),Tempo investito totale (gg),% tempo investito,Buy&Hold % (ref),TNOW BH-cond %,TNOW BH-cond CAGR %,TNOW BH-cond MaxDD %,TNOW BH-cond % tempo investito,TNOW BH %,TNOW BH CAGR %,TNOW BH MaxDD %,TNOW BH % tempo investito,Orizzonte (mediana giorni / n° trade),Stato
+SEME.MI,Intermedia v2,-127.71,-1.28,370.55,3.71,-0.35,-0.34,2,10,20,2.06,70.52,,,,,,,,,mediana hold 10g; 2 trade,OK
+XAIX.MI,Intermedia v2,1807.31,18.07,326.92,3.27,5.53,3.86,10,13,123,11.0,108.22,,,,,,,,,mediana hold 13g; 10 trade,OK
+TNOW.MI,Aggressiva,9772.07,97.72,2135.36,21.35,4.58,7.05,3,44,1446,56.88,605.51,356.91,16.41,26.86,77.69,616.43,21.76,31.7,100.0,mediana hold 44g; 3 trade,OK
+SMH.MI,Intermedia v2,420.5,4.21,1433.82,14.34,0.29,0.86,17,3,116,9.47,202.04,,,,,,,,,mediana hold 3g; 17 trade,OK
+RBOT.MI,Intermedia v2,-201.93,-2.02,1447.25,14.47,-0.14,-0.23,21,6,192,8.47,218.34,,,,,,,,,mediana hold 6g; 21 trade,OK
+STKX.MI,Intermedia v2,0.0,0.0,0.0,0.0,,0.0,0,0,0,0.0,179.03,,,,,,,,,mediana hold 0g; 0 trade,OK
+EDEF.DE,Aggressiva,0.0,0.0,0.0,0.0,,0.0,0,0,0,0.0,6.89,,,,,,,,,mediana hold 0g; 0 trade,OK

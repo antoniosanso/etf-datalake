@@ -1,3 +1,23 @@
+REPORT_COLUMNS_ORDER = [
+    "ticker","best_strategy",
+    "profit_est_eur","profit_est_pct",
+    "risk_est_eur","risk_est_pct",
+    "CAGR_pct","horizon_hint","status"
+]
+
+REPORT_COLUMNS_MAP = {
+    "ticker": "Ticker",
+    "best_strategy": "Strategia",
+    "profit_est_eur": "Profitto €",
+    "profit_est_pct": "Profitto %",
+    "risk_est_eur": "Rischio € (MaxDD)",
+    "risk_est_pct": "Rischio % (MaxDD)",
+    "CAGR_pct": "CAGR %",
+    "horizon_hint": "Orizzonte (mediana giorni / n° trade)",
+    "status": "Stato",
+}
+
+
 import os, math, datetime as dt
 import numpy as np, pandas as pd, yfinance as yf
 

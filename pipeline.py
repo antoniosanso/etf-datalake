@@ -165,8 +165,12 @@ for t in TICKERS:
 rep = pd.DataFrame(rows)
 rep.to_csv("report.csv", index=False)
 
+# Scrivi report.md con fallback se 'tabulate' non è disponibile
+try:
+    md = rep.to_markdown(index=False)  # richiede 'tabulate'
+except Exception:
+    md = rep.to_csv(index=False)
 with open("report.md","w",encoding="utf-8") as f:
-    f.write("# ETF – Report giornaliero (3 numeri)\n\n")
-    f.write(rep.to_markdown(index=False))
+    f.write(md)
 
 print("Done. Wrote report.csv and report.md")

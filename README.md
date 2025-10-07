@@ -1,26 +1,11 @@
-# ETF DataLake & 3-Numbers Report (Autonomous)
+# ETF DataLake & Report – v3
 
-Questa pipeline GitHub Actions scarica ~10 anni di dati giornalieri per i ticker in `tickers.txt`,
-genera i CSV in `data/` e produce due report: `report.csv` e `report.md` con i **3 numeri** (profitto, rischio, orizzonte).
+Questa versione **sostituisce completamente** i file precedenti e corregge i numeri:
+- `report.csv` ora contiene **profitto**, **rischio = Max Drawdown** (in % e in €), **CAGR%**, **orizzonte** (mediana giorni in posizione, n° trade).
+- Robustezza nel salvataggio di `report.md` anche senza il pacchetto `tabulate`.
+- Continua a creare i CSV giornalieri in `data/` per ogni ticker.
+- (Opzionale) genera `portfolio_report.csv` per **Momentum Rotation** (top-2, mensile).
 
-**Scheduling:** feriali alle 18:30 Europe/Rome (cron UTC 16:30). Puoi avviare manualmente dal tab **Actions**.
-
-## Come usare
-1. Crea un repository vuoto su GitHub.
-2. Aggiungi questi file:
-   - `.github/workflows/fetch.yml`
-   - `pipeline.py`
-   - `tickers.txt`
-   - `README.md`
-3. Vai su **Actions** → **Run workflow**. Al termine vedrai `data/*.csv`, `report.csv`, `report.md`.
-
-## Note
-- Aggiungi/rimuovi ETF modificando `tickers.txt` (uno per riga). Esempio:
-  ```
-  SEME.MI
-  XAIX.MI
-  TNOW.MI
-  EDEF.PA
-  ```
-- Per massimizzare robustezza, in fase 2 aggiungeremo: max drawdown preciso, multi-orizzonte (10/5/3/1/YTD), rotazione momentum e dual momentum.
-- Ultimo aggiornamento: 2025-10-07
+**Scheduling:** feriali 18:30 Europe/Rome (cron 16:30 UTC).  
+**Capitale di riferimento:** €10000.  
+**Ultimo aggiornamento:** 2025-10-07.

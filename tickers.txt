@@ -1,8 +1,8 @@
-# Universe iniziale (EUR trading; base class USD accettata se necessario)
+# Universe iniziale (EUR trading; base class USD accettata)
 SEME.MI
 XAIX.MI
 TNOW.MI
-EDEF.DE
 SMH.MI
 RBOT.MI
 STKX.MI
+EDEF.MI

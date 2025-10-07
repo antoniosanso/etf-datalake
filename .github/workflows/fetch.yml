@@ -1,0 +1,35 @@
+name: Fetch ETF Data & Build Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 16 * * 1-5"  # 16:30 UTC ≈ 18:30 Europe/Rome (lun-ven)
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install yfinance pandas numpy
+
+      - name: Run pipeline
+        run: |
+          python pipeline.py
+
+      - name: Commit artifacts
+        run: |
+          git config user.name "autobot"
+          git config user.email "autobot@users.noreply.github.com"
+          git add -A
+          git commit -m "daily update" || echo "nothing to commit"
+          git push

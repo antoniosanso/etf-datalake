@@ -1,23 +1,3 @@
-REPORT_COLUMNS_ORDER = [
-    "ticker","best_strategy",
-    "profit_est_eur","profit_est_pct",
-    "risk_est_eur","risk_est_pct",
-    "CAGR_pct","horizon_hint","status"
-]
-
-REPORT_COLUMNS_MAP = {
-    "ticker": "Ticker",
-    "best_strategy": "Strategia",
-    "profit_est_eur": "Profitto €",
-    "profit_est_pct": "Profitto %",
-    "risk_est_eur": "Rischio € (MaxDD)",
-    "risk_est_pct": "Rischio % (MaxDD)",
-    "CAGR_pct": "CAGR %",
-    "horizon_hint": "Orizzonte (mediana giorni / n° trade)",
-    "status": "Stato",
-}
-
-
 import os, math, datetime as dt
 import numpy as np, pandas as pd, yfinance as yf
 
@@ -25,6 +5,36 @@ TICKERS_FILE = "tickers.txt"
 DATA_DIR = "data"
 START_YEARS = 10
 CAPITAL0 = 10000.0
+
+# ---- Report headers (edit here only) ----
+REPORT_COLUMNS_ORDER = [
+    "ticker","best_strategy",
+    "profit_est_eur","profit_est_pct",
+    "risk_est_eur","risk_est_pct",
+    "return_to_maxdd",
+    "CAGR_pct",
+    "n_trades","median_hold_days",
+    "total_invested_days","invested_time_pct",
+    "buy_hold_pct_ref",
+    "horizon_hint","status"
+]
+REPORT_COLUMNS_MAP = {
+    "ticker": "Ticker",
+    "best_strategy": "Strategia",
+    "profit_est_eur": "Profitto €",
+    "profit_est_pct": "Profitto %",
+    "risk_est_eur": "Rischio € (MaxDD)",
+    "risk_est_pct": "Rischio % (MaxDD)",
+    "return_to_maxdd": "Rend/MaxDD (x)",
+    "CAGR_pct": "CAGR %",
+    "n_trades": "N° Trade",
+    "median_hold_days": "Hold mediano (gg)",
+    "total_invested_days": "Tempo investito totale (gg)",
+    "invested_time_pct": "% tempo investito",
+    "buy_hold_pct_ref": "Buy&Hold % (ref)",
+    "horizon_hint": "Orizzonte (mediana giorni / n° trade)",
+    "status": "Stato",
+}
 
 os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -42,38 +52,27 @@ def start_date(years=START_YEARS):
         return today - dt.timedelta(days=365*years)
 
 def normalize_ohlcv_columns(df, ticker_hint=None):
-    """
-    Ensure a flat dataframe with columns: dt, open, high, low, close, adj_close, volume, ticker.
-    Handles MultiIndex columns, index-as-date, and variant names.
-    """
-    # Unnest if MultiIndex
+    # Unnest MultiIndex if present
     if isinstance(df.columns, pd.MultiIndex):
         if ticker_hint is not None and ticker_hint in df.columns.get_level_values(0):
             df = df[ticker_hint]
         else:
             df.columns = [c[1] if isinstance(c, tuple) else c for c in df.columns]
-
-    # Bring index to column FIRST so we can lowercase it
+    # Reset index to expose Date column
     df = df.reset_index()
-
-    # Lowercase all column names
+    # lowercase
     df.columns = [str(c).lower() for c in df.columns]
-
-    # Standardize date column to 'dt'
+    # normalize date col
     if "date" in df.columns:
-        df = df.rename(columns={"date": "dt"})
+        df = df.rename(columns={"date":"dt"})
     elif "datetime" in df.columns:
-        df = df.rename(columns={"datetime": "dt"})
+        df = df.rename(columns={"datetime":"dt"})
     elif "index" in df.columns:
-        df = df.rename(columns={"index": "dt"})
-
-    # Standardize adj close
+        df = df.rename(columns={"index":"dt"})
+    # normalize adj close
     if "adj close" in df.columns:
-        df = df.rename(columns={"adj close": "adj_close"})
-    elif "adj_close" not in df.columns and "close" in df.columns:
-        pass
-
-    # Ensure required columns exist
+        df = df.rename(columns={"adj close":"adj_close"})
+    # guards
     for col in ["open","high","low","close"]:
         if col not in df.columns:
             raise KeyError(f"missing column '{col}' after normalization")
@@ -81,27 +80,21 @@ def normalize_ohlcv_columns(df, ticker_hint=None):
         df["volume"] = 0.0
     if "dt" not in df.columns:
         df["dt"] = pd.date_range(start="2000-01-01", periods=len(df), freq="D")
-
     return df
 
 def dl_ohlcv(ticker: str, start_date):
     try:
         raw = yf.download(ticker, start=start_date.isoformat(), interval="1d", auto_adjust=False, progress=False, group_by="ticker")
     except Exception as e:
-        print(f"[{ticker}] ERROR download: {e}")
-        return None
+        print(f"[{ticker}] ERROR download: {e}"); return None
     if raw is None or raw.empty:
-        print(f"[{ticker}] NO DATA")
-        return None
+        print(f"[{ticker}] NO DATA"); return None
     try:
         df = normalize_ohlcv_columns(raw, ticker_hint=ticker)
     except Exception as e:
-        print(f"[{ticker}] NORMALIZE ERROR: {e}")
-        return None
-
+        print(f"[{ticker}] NORMALIZE ERROR: {e}"); return None
     df["ticker"] = ticker
     df = df.dropna(subset=["open","high","low","close"])
-
     out = os.path.join(DATA_DIR, f"{ticker}.csv")
     df.to_csv(out, index=False)
     print(f"[{ticker}] saved -> {out} ({len(df)} rows)")
@@ -219,6 +212,9 @@ def backtest_variant_with_metrics(df: pd.DataFrame, variant: str) -> dict:
     cagr_pct = ((equity.iloc[-1]/equity.iloc[0]) ** (365.25/days) - 1.0) * 100.0
 
     median_hold = int(np.median(holds)) if holds else 0
+    total_invested_days = int(np.sum(holds)) if holds else 0
+    total_bars = len(d)
+    invested_time_pct = (total_invested_days / total_bars * 100.0) if total_bars > 0 else 0.0
 
     return {
         "pnl_eur": round(pnl_eur,2),
@@ -227,6 +223,8 @@ def backtest_variant_with_metrics(df: pd.DataFrame, variant: str) -> dict:
         "maxdd_eur": round(abs(maxdd_pct)/100*CAPITAL0,2),
         "cagr_pct": round(cagr_pct,2),
         "median_hold_days": median_hold,
+        "total_invested_days": total_invested_days,
+        "invested_time_pct": round(invested_time_pct,2),
         "n_trades": len(holds)
     }
 
@@ -288,6 +286,10 @@ def main():
         perf = {v: backtest_variant_with_metrics(df, v) for v in variants}
         best = max(perf, key=lambda k: perf[k]["pnl_eur"])
 
+        # derived fields
+        return_to_maxdd = (perf[best]["pnl_pct"]/perf[best]["maxdd_pct"]) if perf[best]["maxdd_pct"] > 0 else None
+        bh = buy_hold_pct(df)
+
         rows.append({
             "ticker": t,
             "best_strategy": best,
@@ -295,21 +297,34 @@ def main():
             "profit_est_pct": perf[best]["pnl_pct"],
             "risk_est_eur": perf[best]["maxdd_eur"],
             "risk_est_pct": perf[best]["maxdd_pct"],
-            "horizon_hint": f"mediana hold {perf[best]['median_hold_days']}g; {perf[best]['n_trades']} trade",
+            "return_to_maxdd": round(return_to_maxdd,2) if return_to_maxdd is not None else None,
             "CAGR_pct": perf[best]["cagr_pct"],
+            "n_trades": perf[best]["n_trades"],
+            "median_hold_days": perf[best]["median_hold_days"],
+            "total_invested_days": perf[best]["total_invested_days"],
+            "invested_time_pct": perf[best]["invested_time_pct"],
+            "buy_hold_pct_ref": round(bh,2),
+            "horizon_hint": f"mediana hold {perf[best]['median_hold_days']}g; {perf[best]['n_trades']} trade",
             "status": "OK"
         })
 
     rep = pd.DataFrame(rows)
-    rep.to_csv("report.csv", index=False)
+    # apply order/map
+    available = [c for c in REPORT_COLUMNS_ORDER if c in rep.columns]
+    if available:
+        rep = rep[available]
+    rep = rep.rename(columns=REPORT_COLUMNS_MAP)
+
+    rep.to_csv("report.csv", index=False, encoding="utf-8")
     try:
         md = rep.to_markdown(index=False)
     except Exception:
         md = rep.to_csv(index=False)
     with open("report.md","w",encoding="utf-8") as f:
-        f.write("# ETF – Report giornaliero (3 numeri)\n\n")
+        f.write("# ETF – Report (v3.4)\n\n")
         f.write(md)
 
+    # Momentum rotation: optional (kept)
     if len(dfs) >= 2:
         monthly = build_monthly_close(dfs)
         eq = momentum_rotation_monthly(monthly, k=2, lookback_months=12)
@@ -328,7 +343,7 @@ def main():
             })
             pr.to_csv("portfolio_report.csv", index=False)
 
-    print("Done v3.2.")
+    print("Done v3.4.")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,5 @@
+# Universe iniziale (EUR trading; base class USD accettata se necessario)
+SEME.MI
+XAIX.MI
+TNOW.MI
+EDEF.PA

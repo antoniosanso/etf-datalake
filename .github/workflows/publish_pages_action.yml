@@ -2,7 +2,7 @@ name: Publish Reports to GitHub Pages (Action)
 
 on:
   workflow_run:
-    workflows: ["Fetch ETF Data & Build Report (v3.4)"]
+    workflows: ["Fetch ETF Data & Build Report (v3.5.1)"]
     types: [completed]
 
 permissions:
@@ -27,6 +27,7 @@ jobs:
           cp report.csv public/ || true
           cp report.md public/ || true
           cp portfolio_report.csv public/ || true
+          cp portfolio_compare.csv public/ || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

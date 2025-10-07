@@ -1,0 +1,46 @@
+name: Publish Reports to gh-pages Branch
+
+on:
+  workflow_run:
+    workflows: ["Fetch ETF Data & Build Report (v3.5.1)"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  push-gh-pages:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare site
+        run: |
+          rm -rf site && mkdir -p site
+          cp report.csv site/ || true
+          cp report.md site/ || true
+          cp portfolio_report.csv site/ || true
+          cp portfolio_compare.csv site/ || true
+
+      - name: Publish to gh-pages
+        run: |
+          git config user.name "autobot"
+          git config user.email "autobot@users.noreply.github.com"
+          if ! git show-ref --verify --quiet refs/heads/gh-pages; then
+            git switch --orphan gh-pages
+            rm -rf ./*
+            cp -r site/* .
+            git add .
+            git commit -m "init gh-pages"
+            git push -u origin gh-pages
+          else
+            git fetch origin gh-pages:gh-pages
+            git switch gh-pages
+            rm -rf ./*
+            cp -r ../site/* .
+            git add -A
+            git commit -m "update gh-pages from workflow" || echo "no changes"
+            git push
+          fi

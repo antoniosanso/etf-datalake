@@ -1,4 +1,4 @@
-name: Fetch ETF Data & Build Report (v3.4)
+name: Fetch ETF Data & Build Report (v3.5.1)
 
 on:
   workflow_dispatch:
@@ -29,5 +29,5 @@ jobs:
           git config user.name "autobot"
           git config user.email "autobot@users.noreply.github.com"
           git add -A
-          git commit -m "daily update (v3.4)" || echo "nothing to commit"
+          git commit -m "daily update (v3.5.1)" || echo "nothing to commit"
           git push

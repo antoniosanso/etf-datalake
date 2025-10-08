@@ -1,0 +1,16 @@
+{
+  "rows": 186441,
+  "tickers": 96,
+  "date_min": "2018-01-01",
+  "date_max": "2025-10-08",
+  "columns": [
+    "Date",
+    "Ticker",
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Currency"
+  ]
+}

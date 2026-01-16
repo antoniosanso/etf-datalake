@@ -1,8 +1,8 @@
 Ticker,Strategia,Profitto €,Profitto %,Rischio € (MaxDD),Rischio % (MaxDD),Rend/MaxDD (x),CAGR %,N° Trade,Hold mediano (gg),Tempo investito totale (gg),% tempo investito,Buy&Hold % (ref),TNOW BH-cond %,TNOW BH-cond CAGR %,TNOW BH-cond MaxDD %,TNOW BH-cond % tempo investito,TNOW BH %,TNOW BH CAGR %,TNOW BH MaxDD %,TNOW BH % tempo investito,Orizzonte (mediana giorni / n° trade),Stato
-SEME.MI,Aggressiva,2057.38,20.57,1122.88,11.23,1.83,4.68,5,3,120,11.58,110.01,,,,,,,,,mediana hold 3g; 5 trade,OK
-XAIX.MI,Aggressiva,1897.72,18.98,2826.27,28.26,0.67,3.8,6,46,420,35.47,116.43,,,,,,,,,mediana hold 46g; 6 trade,OK
-TNOW.MI,Aggressiva,9796.07,97.96,2135.36,21.35,4.59,7.07,3,44,1513,59.57,618.72,320.09,15.43,26.86,77.68,628.94,21.97,31.7,100.0,mediana hold 44g; 3 trade,OK
-SMH.MI,Conservativa v2,527.68,5.28,1685.47,16.85,0.31,1.01,11,3,307,23.78,262.97,,,,,,,,,mediana hold 3g; 11 trade,OK
-RBOT.MI,Intermedia v2,-472.22,-4.72,1683.19,16.83,-0.28,-0.52,24,5,204,8.75,234.19,,,,,,,,,mediana hold 5g; 24 trade,OK
-STKX.MI,Intermedia v2,0.0,0.0,0.0,0.0,,0.0,0,0,0,0.0,240.05,,,,,,,,,mediana hold 0g; 0 trade,OK
-EDEF.DE,Aggressiva,0.0,0.0,0.0,0.0,,0.0,0,0,0,0.0,12.39,,,,,,,,,mediana hold 0g; 0 trade,OK
+SEME.MI,Aggressiva,2047.41,20.47,1122.88,11.23,1.82,4.66,5,3,121,11.67,109.81,,,,,,,,,mediana hold 3g; 5 trade,OK
+XAIX.MI,Intermedia v2,1882.18,18.82,326.92,3.27,5.76,3.77,11,9,129,10.89,114.74,,,,,,,,,mediana hold 9g; 11 trade,OK
+TNOW.MI,Aggressiva,9717.47,97.17,2135.36,21.35,4.55,7.03,3,44,1515,59.62,616.87,319.03,15.41,26.86,77.69,621.24,21.86,31.7,100.0,mediana hold 44g; 3 trade,OK
+SMH.MI,Conservativa v2,522.46,5.22,1685.47,16.85,0.31,1.0,11,3,308,23.84,262.61,,,,,,,,,mediana hold 3g; 11 trade,OK
+RBOT.MI,Intermedia v2,-472.22,-4.72,1683.19,16.83,-0.28,-0.52,24,5,204,8.74,231.99,,,,,,,,,mediana hold 5g; 24 trade,OK
+STKX.MI,Intermedia v2,0.0,0.0,0.0,0.0,,0.0,0,0,0,0.0,240.46,,,,,,,,,mediana hold 0g; 0 trade,OK
+EDEF.DE,Aggressiva,0.0,0.0,0.0,0.0,,0.0,0,0,0,0.0,14.14,,,,,,,,,mediana hold 0g; 0 trade,OK

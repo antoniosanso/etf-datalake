@@ -20,31 +20,35 @@ def main():
     for p in files:
         ticker = p.stem
         try:
-            df = pd.read_csv(p, parse_dates=["Date"])
-            if df.empty or "Date" not in df.columns:
+            df = pd.read_csv(p)
+            aliases = {str(c).lower(): c for c in df.columns}
+            date_col = aliases.get("date") or aliases.get("dt")
+            if df.empty or date_col is None:
                 continue
-            df = df.sort_values("Date")
+            df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
+            df = df.dropna(subset=[date_col]).sort_values(date_col)
+            if df.empty:
+                continue
             last = df.iloc[-1]
             latest_rows.append({
-                "Date": last["Date"],
+                "Date": last[date_col],
                 "Ticker": ticker,
-                "Open": last.get("Open", None),
-                "High": last.get("High", None),
-                "Low":  last.get("Low", None),
-                "Close": last.get("Close", None),
-                "Volume": last.get("Volume", None),
-                "Currency": last.get("Currency", None),
+                "Open": last.get(aliases.get("open", ""), None),
+                "High": last.get(aliases.get("high", ""), None),
+                "Low":  last.get(aliases.get("low", ""), None),
+                "Close": last.get(aliases.get("close", ""), None),
+                "Volume": last.get(aliases.get("volume", ""), None),
+                "Currency": last.get(aliases.get("currency", ""), None),
             })
             index_items.append({
                 "ticker": ticker,
                 "path": f"data/{p.name}",
-                "last_date": str(pd.to_datetime(last["Date"]).date()),
+                "last_date": str(pd.to_datetime(last[date_col]).date()),
                 "rows": int(df.shape[0]),
                 "bytes": p.stat().st_size
             })
-        except Exception:
-            # skip unreadable files
-            continue
+        except Exception as exc:
+            raise RuntimeError(f"Cannot index {p}: {exc}") from exc
 
     # Write latest CSV (aggregated snapshot)
     if latest_rows:
@@ -53,7 +57,7 @@ def main():
     # Write compact JSON index
     index = {
         "count": len(index_items),
-        "generated_utc": pd.Timestamp.utcnow().isoformat(),
+        "generated_utc": pd.Timestamp.now("UTC").isoformat(),
         "items": index_items
     }
     (out_dir / "index.json").write_text(json.dumps(index, ensure_ascii=False, separators=(",",":")), encoding="utf-8")

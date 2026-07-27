@@ -1,4 +1,4 @@
-name: Fetch ETF Data & Build Report (v3.5.1)
+name: Update validated ETF universe
 
 on:
   workflow_dispatch:
@@ -17,17 +17,29 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install deps
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install yfinance pandas numpy tabulate
-      - name: Run pipeline
+          pip install yfinance pandas
+      - name: Download and validate universe
         run: |
-          python pipeline.py
+          python scripts/update_universe.py --min-valid 96
+          python scripts/build_index.py --data-root data --out-dir latest
+      - name: Verify published index
+        run: |
+          python - <<'PY'
+          import json
+          report = json.load(open("latest/quality-report.json"))
+          index = json.load(open("latest/index.json"))
+          assert report["status"] == "pass", report
+          assert report["valid_count"] >= 96, report
+          assert index["count"] == report["valid_count"], (index, report)
+          print(f"Validated {report['valid_count']} ETFs")
+          PY
       - name: Commit artifacts
         run: |
           git config user.name "autobot"
           git config user.email "autobot@users.noreply.github.com"
           git add -A
-          git commit -m "daily update (v3.5.1)" || echo "nothing to commit"
+          git commit -m "data: refresh validated ETF universe" || echo "nothing to commit"
           git push

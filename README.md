@@ -1,10 +1,13 @@
-# Datalake — Build Index & Latest (minimal)
-Carica questa cartella **direttamente nel repo `etf-datalake`**:
-- `.github/workflows/build_index.yml`
-- `scripts/build_index.py`
+# ETF Datalake
 
-Cosa fa:
-- Legge `data/*.csv`
-- Genera `latest/index.json` (ticker, path, last_date, rows, bytes, count)
-- Genera/aggiorna `latest/eod-latest.csv` (snapshot aggregato)
-Frequenza: ogni giorno feriale 18:20 (Europe/Rome circa) + avviabile a mano.
+Fonte operativa unica degli storici usati dalla trading suite.
+
+- `universe.csv` contiene i 98 ticker candidati recuperati dalla cronologia.
+- `scripts/update_universe.py` scarica gli storici dal 2018, normalizza lo schema
+  e verifica completezza e aggiornamento.
+- Il quality gate accetta la pubblicazione solo con almeno 96 ETF validi.
+- `latest/quality-report.json` espone esito e anomalia di ogni ticker.
+- `latest/index.json` e `latest/eod-latest.csv` sono rigenerati dai file validati.
+
+Il workflow gira nei giorni feriali alle 18:30 circa (ora italiana estiva) ed è
+anche avviabile manualmente.

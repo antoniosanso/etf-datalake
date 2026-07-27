@@ -1,0 +1,794 @@
+{
+  "generated_utc": "2026-07-27T18:51:42.901186+00:00",
+  "candidate_count": 98,
+  "valid_count": 96,
+  "minimum_required": 96,
+  "invalid_count": 2,
+  "status": "pass",
+  "tickers": [
+    {
+      "ticker": "SPY",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IVV",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VOO",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VTI",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "ITOT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "SCHB",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "ACWI",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLK",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLY",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLP",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLE",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLI",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLV",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLU",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLB",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLC",
+      "status": "valid",
+      "reason": "",
+      "rows": 2036,
+      "first_date": "2018-06-19",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XLF",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XOP",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XME",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XRT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XHB",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "ITB",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XBI",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IBB",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IGV",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "QQQ",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "QQQM",
+      "status": "valid",
+      "reason": "",
+      "rows": 1452,
+      "first_date": "2020-10-13",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VGT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "SMH",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "SOXX",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EFA",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IEFA",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EEM",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IEMG",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VEA",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VWO",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "SCZ",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VSS",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "ACWX",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWJ",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWQ",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWG",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWU",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWL",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWA",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWC",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWW",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWS",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EWH",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EZA",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "INDA",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "MCHI",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "KWEB",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "FXI",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "AGG",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "BND",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "LQD",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "HYG",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "TLT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IEF",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "SHY",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "TIP",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "BIL",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VGIT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VCIT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VCSH",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EMB",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "GLD",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IAU",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "SLV",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "GDX",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "DBC",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "USO",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "DBA",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "UNG",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "CPER",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "PPLT",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "PALL",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "UUP",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VNQ",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IYR",
+      "status": "valid",
+      "reason": "",
+      "rows": 2152,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "CSPX.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 2162,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VUAA.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 1819,
+      "first_date": "2019-05-14",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VUSA.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 2162,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "SWDA.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 2163,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IWDA.AS",
+      "status": "valid",
+      "reason": "",
+      "rows": 2191,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EUNL.DE",
+      "status": "valid",
+      "reason": "",
+      "rows": 2173,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "SXR8.DE",
+      "status": "valid",
+      "reason": "",
+      "rows": 2173,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EQQQ.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 2162,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "CNDX.DE",
+      "status": "invalid",
+      "reason": "no_data",
+      "rows": 0,
+      "first_date": null,
+      "last_date": null
+    },
+    {
+      "ticker": "VEVE.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 2162,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "VFEM.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 2162,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "EIMI.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 2164,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "IUSN.L",
+      "status": "invalid",
+      "reason": "no_data",
+      "rows": 0,
+      "first_date": null,
+      "last_date": null
+    },
+    {
+      "ticker": "WSML.L",
+      "status": "valid",
+      "reason": "",
+      "rows": 2104,
+      "first_date": "2018-03-27",
+      "last_date": "2026-07-27"
+    },
+    {
+      "ticker": "XDWD.DE",
+      "status": "valid",
+      "reason": "",
+      "rows": 2173,
+      "first_date": "2018-01-02",
+      "last_date": "2026-07-27"
+    }
+  ]
+}

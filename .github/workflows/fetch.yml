@@ -2,6 +2,13 @@ name: Update validated ETF universe
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "universe.csv"
+      - "scripts/update_universe.py"
+      - "scripts/build_index.py"
+      - ".github/workflows/fetch.yml"
   schedule:
     - cron: "30 16 * * 1-5"
 

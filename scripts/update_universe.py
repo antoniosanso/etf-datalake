@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Download, validate and publish the ETF universe.
+"""Download, validate and publish the Milan-listed ETF universe.
 
-The candidate list intentionally contains 98 symbols recovered from repository
-history.  A run is accepted only when at least 96 symbols are valid and fresh.
-This avoids silently inventing which two symbols were absent from the old
-96-ticker snapshot, which is no longer present in Git or Actions artifacts.
+The candidate universe is sourced from Borsa Italiana's official ETFplus
+instrument list and deliberately includes overlapping exposures. A run is
+accepted only when at least 200 symbols are valid and fresh.
 """
 
 from __future__ import annotations
@@ -102,7 +101,7 @@ def main() -> None:
     parser.add_argument("--data-dir", default="data")
     parser.add_argument("--latest-dir", default="latest")
     parser.add_argument("--start", default="2018-01-01")
-    parser.add_argument("--min-valid", type=int, default=96)
+    parser.add_argument("--min-valid", type=int, default=200)
     parser.add_argument("--max-stale-days", type=int, default=7)
     args = parser.parse_args()
 

@@ -51,3 +51,46 @@ def test_repair_reports_non_positive_prices_as_invalid():
     _, audit = MODULE.repair_and_validate_ohlc(source)
 
     assert audit["ohlc_invalid_rows"] == 1
+
+
+def test_prices_are_rounded_before_ohlc_validation():
+    source = pd.DataFrame(
+        {
+            "Open": [10.12349],
+            "High": [10.12348],
+            "Low": [10.11149],
+            "Close": [10.11151],
+        }
+    )
+
+    repaired, audit = MODULE.repair_and_validate_ohlc(source)
+
+    assert repaired.iloc[0].to_dict() == {
+        "Open": 10.123,
+        "High": 10.123,
+        "Low": 10.111,
+        "Close": 10.112,
+    }
+    assert audit == {"ohlc_repaired_rows": 0, "ohlc_invalid_rows": 0}
+
+
+def test_price_rounding_is_limited_to_three_decimals():
+    source = pd.DataFrame(
+        {
+            "Open": [1.23456],
+            "High": [2.34567],
+            "Low": [0.12345],
+            "Close": [1.98765],
+            "Volume": [1234.56789],
+        }
+    )
+
+    rounded = MODULE.round_prices(source)
+
+    assert rounded.loc[0, ["Open", "High", "Low", "Close"]].tolist() == [
+        1.235,
+        2.346,
+        0.123,
+        1.988,
+    ]
+    assert rounded.loc[0, "Volume"] == source.loc[0, "Volume"]

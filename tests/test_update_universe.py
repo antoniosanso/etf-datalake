@@ -12,6 +12,17 @@ SPEC = importlib.util.spec_from_file_location("update_universe", MODULE_PATH)
 MODULE = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(MODULE)
 
+UNIVERSE_PATH = Path(__file__).parents[1] / "universe.csv"
+
+
+def test_universe_has_required_milan_etfs_and_enough_candidates():
+    universe = pd.read_csv(UNIVERSE_PATH)
+
+    assert universe["ticker"].is_unique
+    assert len(universe) >= 200
+    assert {"SEME.MI", "XAIX.MI", "TNOW.MI"} <= set(universe["ticker"])
+    assert universe["isin"].str.fullmatch(r"[A-Z]{2}[A-Z0-9]{10}").all()
+
 
 def test_repair_expands_range_without_changing_open_or_close():
     source = pd.DataFrame(

@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-07-28T16:39:44.781406+00:00",
+  "generated_utc": "2026-07-28T16:51:59.336564+00:00",
   "candidate_count": 325,
   "valid_count": 315,
   "minimum_required": 200,
   "invalid_count": 10,
-  "ohlc_repaired_rows": 134934,
+  "ohlc_repaired_rows": 134876,
   "ohlc_invalid_rows": 0,
   "status": "pass",
   "tickers": [
@@ -13,7 +13,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1171,
-      "ohlc_repaired_rows": 143,
+      "ohlc_repaired_rows": 141,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-12-13",
       "last_date": "2026-07-28"
@@ -273,7 +273,7 @@
       "status": "valid",
       "reason": "",
       "rows": 550,
-      "ohlc_repaired_rows": 138,
+      "ohlc_repaired_rows": 133,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-05-21",
       "last_date": "2026-07-27"
@@ -313,7 +313,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1315,
-      "ohlc_repaired_rows": 411,
+      "ohlc_repaired_rows": 400,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-05-25",
       "last_date": "2026-07-28"
@@ -663,7 +663,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1192,
-      "ohlc_repaired_rows": 459,
+      "ohlc_repaired_rows": 453,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-11-12",
       "last_date": "2026-07-28"
@@ -793,7 +793,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1186,
-      "ohlc_repaired_rows": 409,
+      "ohlc_repaired_rows": 408,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-11-22",
       "last_date": "2026-07-28"
@@ -1283,7 +1283,7 @@
       "status": "valid",
       "reason": "",
       "rows": 995,
-      "ohlc_repaired_rows": 426,
+      "ohlc_repaired_rows": 425,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-08-23",
       "last_date": "2026-07-28"
@@ -1573,7 +1573,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1410,
-      "ohlc_repaired_rows": 149,
+      "ohlc_repaired_rows": 147,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-01-08",
       "last_date": "2026-07-28"
@@ -2113,7 +2113,7 @@
       "status": "valid",
       "reason": "",
       "rows": 983,
-      "ohlc_repaired_rows": 401,
+      "ohlc_repaired_rows": 395,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-12",
       "last_date": "2026-07-28"
@@ -2123,7 +2123,7 @@
       "status": "valid",
       "reason": "",
       "rows": 2173,
-      "ohlc_repaired_rows": 357,
+      "ohlc_repaired_rows": 356,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
       "last_date": "2026-07-28"
@@ -2233,7 +2233,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1263,
-      "ohlc_repaired_rows": 585,
+      "ohlc_repaired_rows": 583,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-08-05",
       "last_date": "2026-07-28"
@@ -2303,7 +2303,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1317,
-      "ohlc_repaired_rows": 185,
+      "ohlc_repaired_rows": 184,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-05-21",
       "last_date": "2026-07-28"
@@ -2593,7 +2593,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1345,
-      "ohlc_repaired_rows": 622,
+      "ohlc_repaired_rows": 614,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-04-13",
       "last_date": "2026-07-28"
@@ -2753,7 +2753,7 @@
       "status": "valid",
       "reason": "",
       "rows": 459,
-      "ohlc_repaired_rows": 96,
+      "ohlc_repaired_rows": 93,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-09-30",
       "last_date": "2026-07-28"
@@ -2923,7 +2923,7 @@
       "status": "valid",
       "reason": "",
       "rows": 849,
-      "ohlc_repaired_rows": 80,
+      "ohlc_repaired_rows": 77,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-03-15",
       "last_date": "2026-07-27"
@@ -3133,7 +3133,7 @@
       "status": "valid",
       "reason": "",
       "rows": 1119,
-      "ohlc_repaired_rows": 361,
+      "ohlc_repaired_rows": 356,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-02-23",
       "last_date": "2026-07-27"
@@ -3183,7 +3183,7 @@
       "status": "valid",
       "reason": "",
       "rows": 435,
-      "ohlc_repaired_rows": 52,
+      "ohlc_repaired_rows": 51,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-10-31",
       "last_date": "2026-07-28"

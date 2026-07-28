@@ -1,8 +1,0 @@
-# Universe iniziale (EUR trading; base class USD accettata)
-SEME.MI
-XAIX.MI
-TNOW.MI
-SMH.MI
-RBOT.MI
-STKX.MI
-EDEF.DE

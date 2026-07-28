@@ -3,6 +3,17 @@ import argparse, json
 from pathlib import Path
 import pandas as pd
 
+PRICE_COLUMNS = ("Open", "High", "Low", "Close")
+PRICE_DECIMALS = 3
+
+
+def round_prices(frame):
+    out = frame.copy()
+    columns = [column for column in PRICE_COLUMNS if column in out.columns]
+    out[columns] = out[columns].round(PRICE_DECIMALS)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data-root", required=True)
@@ -29,6 +40,7 @@ def main():
             df = df.dropna(subset=[date_col]).sort_values(date_col)
             if df.empty:
                 continue
+            df = round_prices(df)
             last = df.iloc[-1]
             latest_rows.append({
                 "Date": last[date_col],
@@ -52,7 +64,8 @@ def main():
 
     # Write latest CSV (aggregated snapshot)
     if latest_rows:
-        pd.DataFrame(latest_rows, columns=["Date","Ticker","Open","High","Low","Close","Volume","Currency"]).to_csv(out_dir / "eod-latest.csv", index=False)
+        latest = pd.DataFrame(latest_rows, columns=["Date","Ticker","Open","High","Low","Close","Volume","Currency"])
+        round_prices(latest).to_csv(out_dir / "eod-latest.csv", index=False)
 
     # Write compact JSON index
     index = {

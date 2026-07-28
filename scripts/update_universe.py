@@ -18,6 +18,16 @@ import pandas as pd
 import yfinance as yf
 
 REQUIRED = ("Date", "Ticker", "Open", "High", "Low", "Close", "Volume")
+PRICE_COLUMNS = ("Open", "High", "Low", "Close")
+PRICE_DECIMALS = 3
+
+
+def round_prices(frame: pd.DataFrame) -> pd.DataFrame:
+    """Return a copy with every available price column rounded consistently."""
+    out = frame.copy()
+    columns = [column for column in PRICE_COLUMNS if column in out.columns]
+    out[columns] = out[columns].round(PRICE_DECIMALS)
+    return out
 
 
 def repair_and_validate_ohlc(frame: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
@@ -33,8 +43,8 @@ def repair_and_validate_ohlc(frame: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     The function returns audit counts so repairs remain visible in the quality
     report instead of being silently hidden.
     """
-    out = frame.copy()
-    price_cols = ["Open", "High", "Low", "Close"]
+    out = round_prices(frame)
+    price_cols = list(PRICE_COLUMNS)
     original = out[price_cols].copy()
 
     out["High"] = out[["High", "Open", "Close"]].max(axis=1)
@@ -69,7 +79,8 @@ def normalize(raw: pd.DataFrame, ticker: str) -> pd.DataFrame:
             out[col] = 0 if col == "Volume" else pd.NA
         out[col] = pd.to_numeric(out[col], errors="coerce")
     out["Ticker"] = ticker
-    out = out[list(REQUIRED)].dropna(subset=["Date", "Open", "High", "Low", "Close"])
+    out = out[list(REQUIRED)].dropna(subset=["Date", *PRICE_COLUMNS])
+    out = round_prices(out)
     return out.drop_duplicates(["Date", "Ticker"], keep="last").sort_values("Date")
 
 

@@ -27,7 +27,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install yfinance pandas
+          pip install yfinance pandas pytest
+      - name: Test OHLC validation
+        run: pytest -q
       - name: Download and validate universe
         run: |
           python scripts/update_universe.py --min-valid 96
@@ -39,6 +41,7 @@ jobs:
           report = json.load(open("latest/quality-report.json"))
           index = json.load(open("latest/index.json"))
           assert report["status"] == "pass", report
+          assert report["ohlc_invalid_rows"] == 0, report
           assert report["valid_count"] >= 96, report
           assert index["count"] == report["valid_count"], (index, report)
           print(f"Validated {report['valid_count']} ETFs")

@@ -21,6 +21,39 @@ import yfinance as yf
 REQUIRED = ("Date", "Ticker", "Open", "High", "Low", "Close", "Volume")
 
 
+def repair_and_validate_ohlc(frame: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+    """Make daily bars internally consistent without altering Open or Close.
+
+    Some thinly traded ETF feeds report an incomplete intraday High/Low while
+    Open and Close are valid exchange prints.  Expanding the range to include
+    those prints is the least-assumptive repair:
+
+        High = max(High, Open, Close)
+        Low  = min(Low, Open, Close)
+
+    The function returns audit counts so repairs remain visible in the quality
+    report instead of being silently hidden.
+    """
+    out = frame.copy()
+    price_cols = ["Open", "High", "Low", "Close"]
+    original = out[price_cols].copy()
+
+    out["High"] = out[["High", "Open", "Close"]].max(axis=1)
+    out["Low"] = out[["Low", "Open", "Close"]].min(axis=1)
+
+    repaired = original.ne(out[price_cols]).any(axis=1)
+    invalid = (
+        out[price_cols].isna().any(axis=1)
+        | out[price_cols].le(0).any(axis=1)
+        | out["Low"].gt(out[["Open", "Close", "High"]].min(axis=1))
+        | out["High"].lt(out[["Open", "Close", "Low"]].max(axis=1))
+    )
+    return out, {
+        "ohlc_repaired_rows": int(repaired.sum()),
+        "ohlc_invalid_rows": int(invalid.sum()),
+    }
+
+
 def normalize(raw: pd.DataFrame, ticker: str) -> pd.DataFrame:
     if raw is None or raw.empty:
         return pd.DataFrame(columns=REQUIRED)
@@ -93,12 +126,16 @@ def main() -> None:
     for ticker in candidates:
         frame = download(ticker, args.start)
         status, reason = "valid", ""
+        ohlc_audit = {"ohlc_repaired_rows": 0, "ohlc_invalid_rows": 0}
         if frame.empty:
             status, reason = "invalid", "no_data"
         else:
+            frame, ohlc_audit = repair_and_validate_ohlc(frame)
             first_date = frame["Date"].min().date()
             last_date = frame["Date"].max().date()
-            if last_date < freshness_cutoff:
+            if ohlc_audit["ohlc_invalid_rows"]:
+                status, reason = "invalid", "inconsistent_ohlc"
+            elif last_date < freshness_cutoff:
                 status, reason = "invalid", "stale"
             elif len(frame) < 50:
                 status, reason = "invalid", "too_short"
@@ -115,6 +152,7 @@ def main() -> None:
                 "status": status,
                 "reason": reason,
                 "rows": int(len(frame)),
+                **ohlc_audit,
                 "first_date": str(frame["Date"].min().date()) if not frame.empty else None,
                 "last_date": str(frame["Date"].max().date()) if not frame.empty else None,
             }
@@ -128,6 +166,8 @@ def main() -> None:
         "valid_count": len(valid),
         "minimum_required": args.min_valid,
         "invalid_count": len(results) - len(valid),
+        "ohlc_repaired_rows": sum(row["ohlc_repaired_rows"] for row in results),
+        "ohlc_invalid_rows": sum(row["ohlc_invalid_rows"] for row in results),
         "status": "pass" if len(valid) >= args.min_valid else "fail",
         "tickers": results,
     }

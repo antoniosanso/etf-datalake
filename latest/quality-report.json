@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-09-24T20:05:48.547956+00:00",
+  "generated_utc": "2026-09-25T20:06:54.971971+00:00",
   "candidate_count": 325,
   "valid_count": 314,
   "minimum_required": 200,
   "invalid_count": 11,
-  "ohlc_repaired_rows": 137752,
+  "ohlc_repaired_rows": 137847,
   "ohlc_invalid_rows": 0,
   "status": "pass",
   "tickers": [
@@ -12,281 +12,281 @@
       "ticker": "SEME.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1212,
+      "rows": 1213,
       "ohlc_repaired_rows": 141,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-12-13",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XAIX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1360,
+      "rows": 1361,
       "ohlc_repaired_rows": 279,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-05-19",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "TNOW.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2216,
+      "rows": 2217,
       "ohlc_repaired_rows": 188,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AICU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 488,
-      "ohlc_repaired_rows": 195,
+      "rows": 489,
+      "ohlc_repaired_rows": 196,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-10-14",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "EMCR.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 413,
+      "rows": 2215,
+      "ohlc_repaired_rows": 415,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EMMH.MI",
       "status": "valid",
       "reason": "",
-      "rows": 562,
+      "rows": 563,
       "ohlc_repaired_rows": 134,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-07-01",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "HYEM.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2112,
+      "rows": 2113,
       "ohlc_repaired_rows": 915,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-05-29",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EBBB.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 246,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CBEF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2004,
+      "rows": 2005,
       "ohlc_repaired_rows": 761,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-10-29",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SRIUC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 770,
-      "ohlc_repaired_rows": 157,
+      "rows": 771,
+      "ohlc_repaired_rows": 158,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-09-06",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "SRIC3.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1708,
-      "ohlc_repaired_rows": 99,
+      "rows": 1709,
+      "ohlc_repaired_rows": 100,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-01-06",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XZE5.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1489,
-      "ohlc_repaired_rows": 485,
+      "rows": 1490,
+      "ohlc_repaired_rows": 484,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-11-11",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FAMSF3.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1016,
-      "ohlc_repaired_rows": 443,
+      "rows": 1018,
+      "ohlc_repaired_rows": 445,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-21",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FAMSFF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1019,
+      "rows": 1020,
       "ohlc_repaired_rows": 440,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-16",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HECB.MI",
       "status": "valid",
       "reason": "",
       "rows": 246,
-      "ohlc_repaired_rows": 25,
+      "ohlc_repaired_rows": 24,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-10-01",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "IQEC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2116,
+      "rows": 2117,
       "ohlc_repaired_rows": 166,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-05-22",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "IEAA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 636,
+      "rows": 637,
       "ohlc_repaired_rows": 31,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-03-15",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BE26.MI",
       "status": "valid",
       "reason": "",
-      "rows": 554,
+      "rows": 555,
       "ohlc_repaired_rows": 53,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-07-11",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "COOL.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1211,
-      "ohlc_repaired_rows": 426,
+      "rows": 1212,
+      "ohlc_repaired_rows": 427,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-12-14",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SEUC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 69,
+      "rows": 2215,
+      "ohlc_repaired_rows": 70,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CBEU5.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 216,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "V3RE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 977,
-      "ohlc_repaired_rows": 243,
+      "rows": 978,
+      "ohlc_repaired_rows": 242,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-11-15",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "ETFUSC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1764,
+      "rows": 1765,
       "ohlc_repaired_rows": 838,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-10-11",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "USCBC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 771,
-      "ohlc_repaired_rows": 20,
+      "rows": 772,
+      "ohlc_repaired_rows": 21,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-09-06",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FAMLSS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1022,
-      "ohlc_repaired_rows": 324,
+      "rows": 1023,
+      "ohlc_repaired_rows": 326,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-13",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HAGG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1183,
+      "rows": 1184,
       "ohlc_repaired_rows": 465,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-01-25",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BS26.MI",
       "status": "valid",
       "reason": "",
-      "rows": 591,
+      "rows": 592,
       "ohlc_repaired_rows": 134,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-05-21",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "XBNK.MI",
       "status": "valid",
       "reason": "",
-      "rows": 473,
+      "rows": 474,
       "ohlc_repaired_rows": 30,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-11-04",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "USCE.MI",
@@ -302,331 +302,331 @@
       "ticker": "ECO.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1586,
+      "rows": 1587,
       "ohlc_repaired_rows": 434,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-06-26",
-      "last_date": "2026-09-23"
+      "last_date": "2026-09-24"
     },
     {
       "ticker": "V3GF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1356,
+      "rows": 1357,
       "ohlc_repaired_rows": 411,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-05-25",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XZBU.MI",
       "status": "valid",
       "reason": "",
       "rows": 1507,
-      "ohlc_repaired_rows": 485,
+      "ohlc_repaired_rows": 484,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-10-16",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "AHYE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2149,
+      "rows": 2150,
       "ohlc_repaired_rows": 117,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-04-05",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HYSRI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1388,
-      "ohlc_repaired_rows": 255,
+      "rows": 1389,
+      "ohlc_repaired_rows": 254,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-04-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FAMEUS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1018,
-      "ohlc_repaired_rows": 477,
+      "rows": 1019,
+      "ohlc_repaired_rows": 478,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-20",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XAT1.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2095,
-      "ohlc_repaired_rows": 234,
+      "rows": 2096,
+      "ohlc_repaired_rows": 235,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-06-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "TAEH.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1190,
+      "rows": 1191,
       "ohlc_repaired_rows": 521,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-01-13",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "EUHI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 380,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "JNKE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 172,
+      "rows": 2215,
+      "ohlc_repaired_rows": 173,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GFA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2113,
-      "ohlc_repaired_rows": 774,
+      "rows": 2114,
+      "ohlc_repaired_rows": 775,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-05-28",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "LAFRI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2216,
-      "ohlc_repaired_rows": 682,
+      "rows": 2217,
+      "ohlc_repaired_rows": 681,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SAUDI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 470,
-      "ohlc_repaired_rows": 174,
+      "rows": 471,
+      "ohlc_repaired_rows": 173,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-11-08",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SRSA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 856,
+      "rows": 2215,
+      "ohlc_repaired_rows": 855,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AASI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2157,
-      "ohlc_repaired_rows": 457,
+      "rows": 2158,
+      "ohlc_repaired_rows": 456,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-03-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AEJ.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1925,
+      "rows": 1926,
       "ohlc_repaired_rows": 378,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-02-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CHINE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1280,
+      "rows": 1282,
       "ohlc_repaired_rows": 450,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-09-07",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FLXC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1851,
+      "rows": 1852,
       "ohlc_repaired_rows": 319,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-06-11",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HMCA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1949,
-      "ohlc_repaired_rows": 572,
+      "rows": 1950,
+      "ohlc_repaired_rows": 573,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-01-21",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "MCHN.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1390,
-      "ohlc_repaired_rows": 725,
+      "rows": 1391,
+      "ohlc_repaired_rows": 724,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-04-07",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FXC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 197,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CHIN.MI",
       "status": "valid",
       "reason": "",
-      "rows": 740,
-      "ohlc_repaired_rows": 246,
+      "rows": 741,
+      "ohlc_repaired_rows": 247,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-10-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EMAE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 531,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AJEUAS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 1048,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CNEW.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1261,
+      "rows": 1263,
       "ohlc_repaired_rows": 442,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-10-04",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XAXJ.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 1087,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "ALAT.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2157,
-      "ohlc_repaired_rows": 752,
+      "rows": 2158,
+      "ohlc_repaired_rows": 751,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-03-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BRA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1911,
-      "ohlc_repaired_rows": 303,
+      "rows": 2215,
+      "ohlc_repaired_rows": 365,
       "ohlc_invalid_rows": 0,
-      "first_date": "2019-03-14",
-      "last_date": "2026-09-24"
+      "first_date": "2018-01-02",
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FLXB.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1847,
-      "ohlc_repaired_rows": 808,
+      "rows": 1848,
+      "ohlc_repaired_rows": 807,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-06-17",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "IBZL.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 378,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XMBR.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 911,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EST.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1910,
+      "rows": 1911,
       "ohlc_repaired_rows": 675,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-03-15",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "TUR.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1910,
-      "ohlc_repaired_rows": 447,
+      "rows": 1911,
+      "ohlc_repaired_rows": 446,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-03-15",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AIQU.MI",
@@ -642,41 +642,41 @@
       "ticker": "LEMA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 732,
+      "rows": 733,
       "ohlc_repaired_rows": 0,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-10-31",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EEMK.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 624,
+      "rows": 2215,
+      "ohlc_repaired_rows": 626,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FEME.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1233,
-      "ohlc_repaired_rows": 470,
+      "rows": 1234,
+      "ohlc_repaired_rows": 471,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-11-12",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FLXE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2193,
-      "ohlc_repaired_rows": 999,
+      "rows": 2194,
+      "ohlc_repaired_rows": 998,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-31",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GSEM.MI",
@@ -692,51 +692,51 @@
       "ticker": "HSEM.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1495,
+      "rows": 1496,
       "ohlc_repaired_rows": 787,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-11-03",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EMHD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 742,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "RIEM.MI",
       "status": "valid",
       "reason": "",
       "rows": 558,
-      "ohlc_repaired_rows": 70,
+      "ohlc_repaired_rows": 69,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-07-08",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "EMRG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 1017,
+      "rows": 2215,
+      "ohlc_repaired_rows": 1016,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EMMUSC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2097,
+      "rows": 2098,
       "ohlc_repaired_rows": 822,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-06-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "V3ML.MI",
@@ -746,257 +746,257 @@
       "ohlc_repaired_rows": 299,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-10-31",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "VCEU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2139,
-      "ohlc_repaired_rows": 691,
+      "rows": 2140,
+      "ohlc_repaired_rows": 690,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-04-19",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AIME.MI",
       "status": "valid",
       "reason": "",
-      "rows": 648,
+      "rows": 649,
       "ohlc_repaired_rows": 269,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-02-28",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EGRO.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1280,
-      "ohlc_repaired_rows": 314,
+      "rows": 1281,
+      "ohlc_repaired_rows": 315,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-09-07",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "DXEZ.MI",
       "status": "valid",
       "reason": "",
-      "rows": 362,
-      "ohlc_repaired_rows": 193,
+      "rows": 363,
+      "ohlc_repaired_rows": 194,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-04-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FEUI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1227,
-      "ohlc_repaired_rows": 428,
+      "rows": 1228,
+      "ohlc_repaired_rows": 427,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-11-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FEUZ.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2023,
-      "ohlc_repaired_rows": 537,
+      "rows": 2024,
+      "ohlc_repaired_rows": 539,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-10-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EUPA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1561,
-      "ohlc_repaired_rows": 774,
+      "rows": 1563,
+      "ohlc_repaired_rows": 775,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-07-31",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EUSD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 256,
+      "rows": 257,
       "ohlc_repaired_rows": 47,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-09-17",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "H50E.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 827,
+      "rows": 2215,
+      "ohlc_repaired_rows": 828,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "IQEE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2051,
+      "rows": 2052,
       "ohlc_repaired_rows": 161,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-08-22",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "SDJE50.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 1105,
+      "rows": 2215,
+      "ohlc_repaired_rows": 1107,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "LGEU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1910,
+      "rows": 1911,
       "ohlc_repaired_rows": 553,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-03-15",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CAPE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 996,
+      "rows": 2215,
+      "ohlc_repaired_rows": 997,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EURO.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 1049,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EMUAA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2133,
+      "rows": 2134,
       "ohlc_repaired_rows": 724,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-04-27",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "V3EA.MI",
       "status": "valid",
       "reason": "",
       "rows": 1036,
-      "ohlc_repaired_rows": 424,
+      "ohlc_repaired_rows": 423,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-08-23",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "TEET.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1877,
-      "ohlc_repaired_rows": 364,
+      "rows": 1879,
+      "ohlc_repaired_rows": 365,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-05-03",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "DFEA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2213,
-      "ohlc_repaired_rows": 476,
+      "rows": 2214,
+      "ohlc_repaired_rows": 477,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "C40.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2182,
+      "rows": 2183,
       "ohlc_repaired_rows": 869,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-02-15",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "DAXESG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1360,
+      "rows": 1361,
       "ohlc_repaired_rows": 412,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-05-19",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CG1.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 947,
+      "rows": 2215,
+      "ohlc_repaired_rows": 948,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EXS1.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 378,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "ISF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 351,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CSMIB.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2210,
+      "rows": 2211,
       "ohlc_repaired_rows": 210,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "MDAX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 349,
-      "ohlc_repaired_rows": 176,
+      "rows": 350,
+      "ohlc_repaired_rows": 175,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-05-08",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "100EUA.MI",
@@ -1006,417 +1006,417 @@
       "ohlc_repaired_rows": 514,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "SW2CHB.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 440,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SVE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1525,
+      "rows": 1526,
       "ohlc_repaired_rows": 784,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-09-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "VUKE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1949,
-      "ohlc_repaired_rows": 790,
+      "rows": 1950,
+      "ohlc_repaired_rows": 789,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-01-21",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "VMIG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 824,
-      "ohlc_repaired_rows": 278,
+      "rows": 825,
+      "ohlc_repaired_rows": 279,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-06-21",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XDAX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 527,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XMIB.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 829,
+      "rows": 2215,
+      "ohlc_repaired_rows": 828,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XSMI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 616,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XMGA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 443,
+      "rows": 445,
       "ohlc_repaired_rows": 224,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-12-16",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "RS2K.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2157,
+      "rows": 2158,
       "ohlc_repaired_rows": 262,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-03-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "ANAE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 495,
-      "ohlc_repaired_rows": 184,
+      "rows": 496,
+      "ohlc_repaired_rows": 185,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-10-08",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AIUU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 700,
+      "rows": 701,
       "ohlc_repaired_rows": 113,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-12-12",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "ENAM.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2213,
-      "ohlc_repaired_rows": 816,
+      "rows": 2215,
+      "ohlc_repaired_rows": 818,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SPTRE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 293,
+      "rows": 294,
       "ohlc_repaired_rows": 50,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-07-28",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "DXUS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 500,
+      "rows": 501,
       "ohlc_repaired_rows": 148,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-09-30",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FUSA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1259,
-      "ohlc_repaired_rows": 467,
+      "rows": 1260,
+      "ohlc_repaired_rows": 466,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-10-07",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FUSU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1256,
+      "rows": 1258,
       "ohlc_repaired_rows": 323,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-10-11",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "UNCA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 905,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "USPA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1561,
-      "ohlc_repaired_rows": 686,
+      "rows": 1562,
+      "ohlc_repaired_rows": 687,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-08-03",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GSLC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1734,
+      "rows": 1736,
       "ohlc_repaired_rows": 624,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-11-21",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HSPD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 1271,
+      "rows": 2215,
+      "ohlc_repaired_rows": 1273,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EQQQ.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 71,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CSSPX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 4,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BBSC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1029,
+      "rows": 1030,
       "ohlc_repaired_rows": 527,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-01",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SP1E.MI",
       "status": "valid",
       "reason": "",
-      "rows": 298,
+      "rows": 299,
       "ohlc_repaired_rows": 109,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-07-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CAPU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 514,
+      "rows": 2215,
+      "ohlc_repaired_rows": 513,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "R2US.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 460,
+      "rows": 2215,
+      "ohlc_repaired_rows": 459,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "USAUSW.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2202,
-      "ohlc_repaired_rows": 832,
+      "rows": 2203,
+      "ohlc_repaired_rows": 833,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "V3NA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1036,
+      "rows": 1037,
       "ohlc_repaired_rows": 451,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-08-23",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "MOAT.MI",
       "status": "valid",
       "reason": "",
       "rows": 2214,
-      "ohlc_repaired_rows": 746,
+      "ohlc_repaired_rows": 745,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "DHSF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 219,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "XZMU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2067,
+      "rows": 2068,
       "ohlc_repaired_rows": 420,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-07-31",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "YICAU.MI",
       "status": "valid",
       "reason": "",
       "rows": 159,
-      "ohlc_repaired_rows": 44,
+      "ohlc_repaired_rows": 43,
       "ohlc_invalid_rows": 0,
       "first_date": "2026-02-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "TPXH.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2140,
-      "ohlc_repaired_rows": 943,
+      "rows": 2141,
+      "ohlc_repaired_rows": 944,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-04-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EJAH.MI",
       "status": "valid",
       "reason": "",
       "rows": 2214,
-      "ohlc_repaired_rows": 850,
+      "ohlc_repaired_rows": 849,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "JPMQ.MI",
       "status": "valid",
       "reason": "",
-      "rows": 580,
-      "ohlc_repaired_rows": 294,
+      "rows": 581,
+      "ohlc_repaired_rows": 296,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-06-10",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "JAPAN.MI",
       "status": "valid",
       "reason": "",
-      "rows": 510,
+      "rows": 511,
       "ohlc_repaired_rows": 163,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-09-13",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HSXD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1511,
-      "ohlc_repaired_rows": 731,
+      "rows": 1512,
+      "ohlc_repaired_rows": 730,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-10-12",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "IQJP.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2124,
-      "ohlc_repaired_rows": 626,
+      "rows": 2125,
+      "ohlc_repaired_rows": 625,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-05-11",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "N400.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 1090,
+      "rows": 2215,
+      "ohlc_repaired_rows": 1089,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "IAPD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 318,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "LDAP.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1316,
-      "ohlc_repaired_rows": 399,
+      "rows": 1318,
+      "ohlc_repaired_rows": 400,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-07-19",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "PADV.MI",
@@ -1426,517 +1426,517 @@
       "ohlc_repaired_rows": 762,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "JPNA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2195,
+      "rows": 2196,
       "ohlc_repaired_rows": 713,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-04",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "V3PL.MI",
       "status": "valid",
       "reason": "",
-      "rows": 982,
+      "rows": 983,
       "ohlc_repaired_rows": 346,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-11-07",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "DXJF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2216,
+      "rows": 2217,
       "ohlc_repaired_rows": 726,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XNJP.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1008,
-      "ohlc_repaired_rows": 206,
+      "rows": 1010,
+      "ohlc_repaired_rows": 207,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-29",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "YIJU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 254,
-      "ohlc_repaired_rows": 41,
+      "rows": 256,
+      "ohlc_repaired_rows": 42,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-09-22",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "DEFS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 329,
+      "rows": 330,
       "ohlc_repaired_rows": 34,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-06-10",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FOO.MI",
       "status": "valid",
       "reason": "",
-      "rows": 568,
-      "ohlc_repaired_rows": 242,
+      "rows": 569,
+      "ohlc_repaired_rows": 243,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-06-24",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "TRVL.MI",
       "status": "valid",
       "reason": "",
-      "rows": 568,
+      "rows": 569,
       "ohlc_repaired_rows": 136,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-06-24",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BRES.MI",
       "status": "valid",
       "reason": "",
-      "rows": 615,
-      "ohlc_repaired_rows": 85,
+      "rows": 616,
+      "ohlc_repaired_rows": 84,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-04-17",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "TELE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 615,
-      "ohlc_repaired_rows": 223,
+      "rows": 616,
+      "ohlc_repaired_rows": 222,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-04-17",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BNKE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1994,
+      "rows": 1995,
       "ohlc_repaired_rows": 145,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-11-12",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CWE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 719,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HLTW.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2216,
+      "rows": 2217,
       "ohlc_repaired_rows": 157,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GUARD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 321,
+      "rows": 322,
       "ohlc_repaired_rows": 137,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-06-17",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HSTE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1451,
-      "ohlc_repaired_rows": 150,
+      "rows": 1452,
+      "ohlc_repaired_rows": 149,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-01-08",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XLCS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2034,
-      "ohlc_repaired_rows": 952,
+      "rows": 2035,
+      "ohlc_repaired_rows": 953,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-09-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XLYS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
-      "ohlc_repaired_rows": 458,
+      "rows": 2216,
+      "ohlc_repaired_rows": 457,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XLPS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 753,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XLES.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 723,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XLFS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 712,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XLVS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
-      "ohlc_repaired_rows": 626,
+      "rows": 2216,
+      "ohlc_repaired_rows": 627,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XLIS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
-      "ohlc_repaired_rows": 905,
+      "rows": 2216,
+      "ohlc_repaired_rows": 906,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XLBS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
-      "ohlc_repaired_rows": 755,
+      "rows": 2216,
+      "ohlc_repaired_rows": 756,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "KSTR.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1316,
+      "rows": 1317,
       "ohlc_repaired_rows": 465,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-07-21",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "STRX.MI",
       "status": "valid",
       "reason": "",
       "rows": 2214,
-      "ohlc_repaired_rows": 987,
+      "ohlc_repaired_rows": 986,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "STSX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 931,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "STNX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 603,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "STZX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 847,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "STWX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 826,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "STQX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 603,
+      "rows": 2215,
+      "ohlc_repaired_rows": 602,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "STPX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 754,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "STKX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 928,
+      "rows": 2215,
+      "ohlc_repaired_rows": 929,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XUTC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1512,
+      "rows": 1513,
       "ohlc_repaired_rows": 635,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-10-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XWTS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 795,
+      "rows": 2215,
+      "ohlc_repaired_rows": 794,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XDWC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 849,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XDWS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 582,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XDW0.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 496,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XDWF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 684,
+      "rows": 2215,
+      "ohlc_repaired_rows": 683,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XDWH.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 317,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XDWI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 688,
+      "rows": 2215,
+      "ohlc_repaired_rows": 687,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "MMLP.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1567,
+      "rows": 1568,
       "ohlc_repaired_rows": 678,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-07-27",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EPRE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 919,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "REEU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 724,
+      "rows": 725,
       "ohlc_repaired_rows": 313,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-11-13",
-      "last_date": "2026-09-23"
+      "last_date": "2026-09-24"
     },
     {
       "ticker": "REWLD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 654,
-      "ohlc_repaired_rows": 281,
+      "rows": 656,
+      "ohlc_repaired_rows": 282,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-02-19",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EPRA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 594,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EENG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 730,
+      "rows": 731,
       "ohlc_repaired_rows": 33,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-11-03",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GRCTB.MI",
       "status": "valid",
       "reason": "",
-      "rows": 424,
+      "rows": 425,
       "ohlc_repaired_rows": 29,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-01-17",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "EGEHE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1053,
+      "rows": 1054,
       "ohlc_repaired_rows": 532,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-07-28",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GREAL.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1709,
+      "rows": 1710,
       "ohlc_repaired_rows": 435,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-01-02",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "BCHN.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1906,
+      "rows": 1907,
       "ohlc_repaired_rows": 115,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-03-21",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EMQQ.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2018,
-      "ohlc_repaired_rows": 419,
+      "rows": 2019,
+      "ohlc_repaired_rows": 418,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-10-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "WEB3.MI",
@@ -1952,211 +1952,211 @@
       "ticker": "FAMMAI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1024,
-      "ohlc_repaired_rows": 384,
+      "rows": 1025,
+      "ohlc_repaired_rows": 383,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FAMAMW.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1024,
-      "ohlc_repaired_rows": 456,
+      "rows": 1025,
+      "ohlc_repaired_rows": 455,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FBT.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1614,
+      "rows": 1615,
       "ohlc_repaired_rows": 736,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-05-20",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SCAR.MI",
       "status": "valid",
       "reason": "",
-      "rows": 673,
-      "ohlc_repaired_rows": 76,
+      "rows": 675,
+      "ohlc_repaired_rows": 77,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-01-23",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GRID.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1116,
+      "rows": 1117,
       "ohlc_repaired_rows": 237,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-05-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "METE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1013,
+      "rows": 1014,
       "ohlc_repaired_rows": 469,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-23",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FAMWCS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1020,
-      "ohlc_repaired_rows": 572,
+      "rows": 1021,
+      "ohlc_repaired_rows": 573,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-15",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FOHW.MI",
       "status": "valid",
       "reason": "",
       "rows": 803,
-      "ohlc_repaired_rows": 154,
+      "ohlc_repaired_rows": 153,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-07-20",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "FOFD.MI",
       "status": "valid",
       "reason": "",
       "rows": 795,
-      "ohlc_repaired_rows": 149,
+      "ohlc_repaired_rows": 148,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-08-01",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "CROP.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1158,
-      "ohlc_repaired_rows": 450,
+      "rows": 1159,
+      "ohlc_repaired_rows": 449,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-03-01",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CHPX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 184,
+      "rows": 185,
       "ohlc_repaired_rows": 51,
       "ohlc_invalid_rows": 0,
       "first_date": "2026-01-05",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AIQE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 501,
-      "ohlc_repaired_rows": 229,
+      "rows": 502,
+      "ohlc_repaired_rows": 230,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-09-26",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HPNA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 238,
+      "rows": 239,
       "ohlc_repaired_rows": 30,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-10-13",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "HPRD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1950,
-      "ohlc_repaired_rows": 875,
+      "rows": 1951,
+      "ohlc_repaired_rows": 877,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-01-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HNSC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 883,
+      "rows": 884,
       "ohlc_repaired_rows": 236,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-03-27",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GCLE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1390,
-      "ohlc_repaired_rows": 689,
+      "rows": 1391,
+      "ohlc_repaired_rows": 688,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-04-07",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HYDE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1025,
+      "rows": 1026,
       "ohlc_repaired_rows": 417,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-09-12",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AGED.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 356,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "ISAG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1100,
+      "rows": 1101,
       "ohlc_repaired_rows": 228,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-05-24",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "RBOT.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 105,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "KWBE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1451,
+      "rows": 1452,
       "ohlc_repaired_rows": 132,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-01-08",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "KARS.MI",
@@ -2172,81 +2172,81 @@
       "ticker": "KOID.MI",
       "status": "valid",
       "reason": "",
-      "rows": 231,
+      "rows": 232,
       "ohlc_repaired_rows": 22,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-10-27",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AIAI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1840,
+      "rows": 1841,
       "ohlc_repaired_rows": 197,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-06-26",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BATT.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2176,
-      "ohlc_repaired_rows": 182,
+      "rows": 2177,
+      "ohlc_repaired_rows": 181,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-02-23",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "RENW.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1480,
+      "rows": 1481,
       "ohlc_repaired_rows": 249,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-11-24",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BTC.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1089,
-      "ohlc_repaired_rows": 533,
+      "rows": 1090,
+      "ohlc_repaired_rows": 534,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-06-08",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CYBR.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1672,
-      "ohlc_repaired_rows": 540,
+      "rows": 1673,
+      "ohlc_repaired_rows": 541,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-02-25",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "VITA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1303,
-      "ohlc_repaired_rows": 605,
+      "rows": 1304,
+      "ohlc_repaired_rows": 606,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-08-05",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "NFRA.MI",
       "status": "invalid",
       "reason": "too_short",
       "rows": 48,
-      "ohlc_repaired_rows": 12,
+      "ohlc_repaired_rows": 11,
       "ohlc_invalid_rows": 0,
       "first_date": "2026-07-20",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "GLRE.MI",
@@ -2262,381 +2262,381 @@
       "ticker": "GREIT.MI",
       "status": "valid",
       "reason": "",
-      "rows": 522,
+      "rows": 523,
       "ohlc_repaired_rows": 109,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-08-27",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "GENDED.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1877,
+      "rows": 1878,
       "ohlc_repaired_rows": 509,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-04-26",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GENDEE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2166,
-      "ohlc_repaired_rows": 780,
+      "rows": 2168,
+      "ohlc_repaired_rows": 781,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-03-08",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "REUS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 921,
+      "rows": 922,
       "ohlc_repaired_rows": 220,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-02-01",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "DAPP.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1358,
+      "rows": 1359,
       "ohlc_repaired_rows": 185,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-05-21",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CURE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1003,
+      "rows": 1004,
       "ohlc_repaired_rows": 340,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-10-07",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "WTAI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1981,
+      "rows": 1982,
       "ohlc_repaired_rows": 112,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-11-30",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "VOLT.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1671,
+      "rows": 1672,
       "ohlc_repaired_rows": 152,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-02-26",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "WDNA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1189,
+      "rows": 1190,
       "ohlc_repaired_rows": 477,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-01-17",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XDER.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 705,
+      "rows": 2215,
+      "ohlc_repaired_rows": 704,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XMOV.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1359,
+      "rows": 1361,
       "ohlc_repaired_rows": 666,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-05-19",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "WEBN.MI",
       "status": "valid",
       "reason": "",
-      "rows": 233,
+      "rows": 234,
       "ohlc_repaired_rows": 32,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-10-20",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AWDU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 519,
-      "ohlc_repaired_rows": 274,
+      "rows": 520,
+      "ohlc_repaired_rows": 275,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-09-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AWDE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 437,
+      "rows": 438,
       "ohlc_repaired_rows": 123,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-12-27",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "ACWI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1995,
+      "rows": 1996,
       "ohlc_repaired_rows": 209,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-11-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "PAACE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 163,
+      "rows": 164,
       "ohlc_repaired_rows": 22,
       "ohlc_invalid_rows": 0,
       "first_date": "2026-02-02",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "WEWEU.MI",
       "status": "invalid",
       "reason": "too_short",
-      "rows": 36,
+      "rows": 37,
       "ohlc_repaired_rows": 15,
       "ohlc_invalid_rows": 0,
       "first_date": "2026-08-03",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "DXWO.MI",
       "status": "valid",
       "reason": "",
-      "rows": 500,
+      "rows": 501,
       "ohlc_repaired_rows": 174,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-09-30",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FGEU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1261,
+      "rows": 1262,
       "ohlc_repaired_rows": 579,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-10-05",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FGQI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1262,
+      "rows": 1263,
       "ohlc_repaired_rows": 412,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-10-04",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HIDIV.MI",
       "status": "valid",
       "reason": "",
-      "rows": 387,
+      "rows": 388,
       "ohlc_repaired_rows": 201,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-03-14",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "WORLD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 568,
+      "rows": 569,
       "ohlc_repaired_rows": 252,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-06-26",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SDIV.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1165,
+      "rows": 1166,
       "ohlc_repaired_rows": 131,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-02-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "HSWD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1579,
+      "rows": 1580,
       "ohlc_repaired_rows": 697,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-07-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "PSRW.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
-      "ohlc_repaired_rows": 951,
+      "rows": 2216,
+      "ohlc_repaired_rows": 952,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SWDA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 3,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "JPGL.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1825,
+      "rows": 1826,
       "ohlc_repaired_rows": 766,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-07-17",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "LGGL.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1950,
+      "rows": 1951,
       "ohlc_repaired_rows": 556,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-01-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "5OGE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 920,
-      "ohlc_repaired_rows": 347,
+      "rows": 922,
+      "ohlc_repaired_rows": 349,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-02-01",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EACW.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1771,
+      "rows": 1772,
       "ohlc_repaired_rows": 675,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-10-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SCWX.MI",
       "status": "valid",
       "reason": "",
-      "rows": 405,
-      "ohlc_repaired_rows": 137,
+      "rows": 406,
+      "ohlc_repaired_rows": 138,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-02-14",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CLIMA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1391,
+      "rows": 1392,
       "ohlc_repaired_rows": 47,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-04-01",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "GOAT.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1530,
-      "ohlc_repaired_rows": 570,
+      "rows": 1531,
+      "ohlc_repaired_rows": 569,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-09-15",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "V3AA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1386,
+      "rows": 1387,
       "ohlc_repaired_rows": 620,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-04-13",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GGRE.MI",
       "status": "valid",
       "reason": "",
       "rows": 889,
-      "ohlc_repaired_rows": 338,
+      "ohlc_repaired_rows": 337,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-03-20",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "YIWSU.MI",
       "status": "valid",
       "reason": "",
-      "rows": 78,
+      "rows": 79,
       "ohlc_repaired_rows": 23,
       "ohlc_invalid_rows": 0,
       "first_date": "2026-06-08",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AGEB.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 341,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "ASRD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1386,
-      "ohlc_repaired_rows": 665,
+      "rows": 1387,
+      "ohlc_repaired_rows": 666,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-04-13",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CATHEM.MI",
@@ -2646,37 +2646,37 @@
       "ohlc_repaired_rows": 295,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-06-30",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "CBND.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1736,
-      "ohlc_repaired_rows": 658,
+      "rows": 1737,
+      "ohlc_repaired_rows": 660,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-11-20",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "PEMD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 913,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "JMBA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1727,
+      "rows": 1728,
       "ohlc_repaired_rows": 782,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-12-03",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "DRGN.MI",
@@ -2686,27 +2686,27 @@
       "ohlc_repaired_rows": 449,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-12-04",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "EMLI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 397,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "CB3.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2149,
-      "ohlc_repaired_rows": 529,
+      "rows": 2150,
+      "ohlc_repaired_rows": 528,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-04-05",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "BT27.MI",
@@ -2716,367 +2716,367 @@
       "ohlc_repaired_rows": 45,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-04-29",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "JBEM.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1836,
+      "rows": 1837,
       "ohlc_repaired_rows": 434,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-07-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GEU7C.MI",
       "status": "valid",
       "reason": "",
-      "rows": 292,
+      "rows": 294,
       "ohlc_repaired_rows": 33,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-07-28",
-      "last_date": "2026-09-21"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "DXG3.MI",
       "status": "valid",
       "reason": "",
-      "rows": 500,
-      "ohlc_repaired_rows": 73,
+      "rows": 501,
+      "ohlc_repaired_rows": 72,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-09-30",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "DXG5.MI",
       "status": "valid",
       "reason": "",
-      "rows": 500,
-      "ohlc_repaired_rows": 110,
+      "rows": 501,
+      "ohlc_repaired_rows": 109,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-09-30",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "H13E.MI",
       "status": "valid",
       "reason": "",
-      "rows": 373,
-      "ohlc_repaired_rows": 48,
+      "rows": 374,
+      "ohlc_repaired_rows": 49,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-03-31",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "H10E.MI",
       "status": "valid",
       "reason": "",
-      "rows": 420,
-      "ohlc_repaired_rows": 49,
+      "rows": 421,
+      "ohlc_repaired_rows": 50,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-01-27",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "EIB3.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1797,
+      "rows": 1798,
       "ohlc_repaired_rows": 594,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-08-28",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EIB5.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1797,
-      "ohlc_repaired_rows": 478,
+      "rows": 1798,
+      "ohlc_repaired_rows": 479,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-08-28",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SEGA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 297,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "JE13.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2182,
-      "ohlc_repaired_rows": 827,
+      "rows": 2183,
+      "ohlc_repaired_rows": 828,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-02-15",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "BBEG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1850,
+      "rows": 1851,
       "ohlc_repaired_rows": 529,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-06-11",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "OG35.MI",
       "status": "valid",
       "reason": "",
       "rows": 1503,
-      "ohlc_repaired_rows": 535,
+      "ohlc_repaired_rows": 534,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-10-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "GOVS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 381,
+      "rows": 2215,
+      "ohlc_repaired_rows": 382,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "LGOV.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 1126,
+      "rows": 2215,
+      "ohlc_repaired_rows": 1125,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "SS1EUA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 513,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "VETY.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1950,
+      "rows": 1951,
       "ohlc_repaired_rows": 481,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-01-18",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XYP1.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 436,
+      "rows": 2215,
+      "ohlc_repaired_rows": 435,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "YIE10.MI",
       "status": "valid",
       "reason": "",
       "rows": 110,
-      "ohlc_repaired_rows": 7,
+      "ohlc_repaired_rows": 6,
       "ohlc_invalid_rows": 0,
       "first_date": "2026-04-22",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "ETFUST.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1903,
+      "rows": 1904,
       "ohlc_repaired_rows": 642,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-03-25",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "ADLU.MI",
       "status": "valid",
       "reason": "",
       "rows": 487,
-      "ohlc_repaired_rows": 137,
+      "ohlc_repaired_rows": 136,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-10-16",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "FGGB.MI",
       "status": "valid",
       "reason": "",
-      "rows": 890,
+      "rows": 891,
       "ohlc_repaired_rows": 90,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-03-15",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "HSGE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 785,
+      "rows": 786,
       "ohlc_repaired_rows": 40,
       "ohlc_invalid_rows": 0,
       "first_date": "2023-08-14",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "MUNI.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1427,
+      "rows": 1428,
       "ohlc_repaired_rows": 244,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-02-10",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "CSBGU3.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 322,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "JU13.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2105,
-      "ohlc_repaired_rows": 887,
+      "rows": 2107,
+      "ohlc_repaired_rows": 889,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-06-06",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "TRS3.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
+      "rows": 2215,
       "ohlc_repaired_rows": 1092,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "JT13.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1645,
+      "rows": 1646,
       "ohlc_repaired_rows": 308,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-04-03",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "VDTE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1343,
-      "ohlc_repaired_rows": 417,
+      "rows": 1344,
+      "ohlc_repaired_rows": 419,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-06-11",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "TFRN.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1878,
-      "ohlc_repaired_rows": 445,
+      "rows": 1879,
+      "ohlc_repaired_rows": 446,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-03-21",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XZEG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1158,
-      "ohlc_repaired_rows": 162,
+      "rows": 1160,
+      "ohlc_repaired_rows": 163,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-02-28",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GAGG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2213,
+      "rows": 2214,
       "ohlc_repaired_rows": 372,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GAGH.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1344,
+      "rows": 1345,
       "ohlc_repaired_rows": 298,
       "ohlc_invalid_rows": 0,
       "first_date": "2021-06-09",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EJEGSS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1074,
+      "rows": 1075,
       "ohlc_repaired_rows": 91,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-06-28",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "GSGR.MI",
       "status": "valid",
       "reason": "",
-      "rows": 658,
+      "rows": 659,
       "ohlc_repaired_rows": 58,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-02-13",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "HGAE.MI",
       "status": "valid",
       "reason": "",
-      "rows": 574,
-      "ohlc_repaired_rows": 117,
+      "rows": 576,
+      "ohlc_repaired_rows": 119,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-06-17",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "AGGH.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1850,
+      "rows": 1851,
       "ohlc_repaired_rows": 47,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-06-12",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "EUAG.MI",
@@ -3092,31 +3092,31 @@
       "ticker": "E15S.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2112,
-      "ohlc_repaired_rows": 668,
+      "rows": 2113,
+      "ohlc_repaired_rows": 669,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-05-31",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "VAGF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1702,
+      "rows": 1703,
       "ohlc_repaired_rows": 303,
       "ohlc_invalid_rows": 0,
       "first_date": "2020-01-14",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XBAG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 414,
+      "rows": 2215,
+      "ohlc_repaired_rows": 413,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "GIST.MI",
@@ -3126,17 +3126,17 @@
       "ohlc_repaired_rows": 628,
       "ohlc_invalid_rows": 0,
       "first_date": "2019-01-23",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "ITPD.MI",
       "status": "valid",
       "reason": "",
-      "rows": 1161,
-      "ohlc_repaired_rows": 371,
+      "rows": 1162,
+      "ohlc_repaired_rows": 372,
       "ohlc_invalid_rows": 0,
       "first_date": "2022-02-23",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "TINE.MI",
@@ -3152,81 +3152,81 @@
       "ticker": "TIPS.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 990,
+      "rows": 2215,
+      "ohlc_repaired_rows": 991,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "INFL10.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2214,
-      "ohlc_repaired_rows": 970,
+      "rows": 2215,
+      "ohlc_repaired_rows": 972,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "XGII.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2213,
-      "ohlc_repaired_rows": 977,
+      "rows": 2214,
+      "ohlc_repaired_rows": 978,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "A01U.MI",
       "status": "valid",
       "reason": "",
-      "rows": 475,
+      "rows": 476,
       "ohlc_repaired_rows": 56,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-10-31",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "FEDF.MI",
       "status": "valid",
       "reason": "",
-      "rows": 2215,
+      "rows": 2216,
       "ohlc_repaired_rows": 925,
       "ohlc_invalid_rows": 0,
       "first_date": "2018-01-02",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "MONEY.MI",
       "status": "valid",
       "reason": "",
-      "rows": 188,
+      "rows": 189,
       "ohlc_repaired_rows": 5,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-12-29",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "FLUSA.MI",
       "status": "valid",
       "reason": "",
-      "rows": 273,
-      "ohlc_repaired_rows": 37,
+      "rows": 274,
+      "ohlc_repaired_rows": 38,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-08-22",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "CLIP.MI",
       "status": "valid",
       "reason": "",
-      "rows": 462,
-      "ohlc_repaired_rows": 146,
+      "rows": 463,
+      "ohlc_repaired_rows": 147,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-11-19",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     },
     {
       "ticker": "MGIN.MI",
@@ -3242,21 +3242,21 @@
       "ticker": "NTSZ.MI",
       "status": "valid",
       "reason": "",
-      "rows": 237,
-      "ohlc_repaired_rows": 93,
+      "rows": 238,
+      "ohlc_repaired_rows": 94,
       "ohlc_invalid_rows": 0,
       "first_date": "2025-10-14",
-      "last_date": "2026-09-24"
+      "last_date": "2026-09-25"
     },
     {
       "ticker": "NTSG.MI",
       "status": "valid",
       "reason": "",
-      "rows": 466,
-      "ohlc_repaired_rows": 149,
+      "rows": 467,
+      "ohlc_repaired_rows": 150,
       "ohlc_invalid_rows": 0,
       "first_date": "2024-11-13",
-      "last_date": "2026-09-22"
+      "last_date": "2026-09-23"
     }
   ]
 }
